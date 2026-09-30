@@ -11,9 +11,12 @@ export function Information() {
   return (
     <main className="info" data-screen="information">
       <h1>{t.siteTitle}</h1>
-      <p>{t.infoLead}</p>
+      <blockquote className="info-quote">
+        <p>“{t.infoQuote}”</p>
+        <footer>— Bruno Barbey</footer>
+      </blockquote>
       <p>{t.infoBody}</p>
-      <p>{t.infoHow}</p>
+      <p>{t.infoPurpose}</p>
       <div className="info-signature" aria-hidden="true">
         <img src="/signature.png" alt="" width="813" height="204" />
       </div>
