@@ -14,6 +14,9 @@ export function Information() {
       <p>{t.infoLead}</p>
       <p>{t.infoBody}</p>
       <p>{t.infoHow}</p>
+      <div className="info-signature" aria-hidden="true">
+        <img src="/signature.png" alt="" width="813" height="204" />
+      </div>
     </main>
   )
 }

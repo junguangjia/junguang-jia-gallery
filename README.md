@@ -4,7 +4,7 @@ A minimal photography portfolio built with React, TypeScript, and Vite.
 
 The homepage has four handwritten category titles: Documentary, Landscape,
 Wildlife, and Film. Landscape contains one sunset photograph; Wildlife contains
-five animal photographs. Documentary and Film are currently empty.
+five animal photographs. Documentary and Film each contain one demo photograph.
 
 English is the default. The header and mobile menu provide a Chinese language
 switch. Photograph series scroll vertically and display the full images.
@@ -41,13 +41,14 @@ When hosting the site, configure SPA fallback to `index.html` for category paths
 - `/` — galleries and handwritten title interactions.
 - `/landscape` — one landscape photograph.
 - `/wildlife` — five wildlife photographs.
-- `/documentary` and `/film` — empty series with a return link.
+- `/documentary` — one documentary demo photograph.
+- `/film` — one film demo photograph.
 - `/information` — an introduction to the portfolio.
 
 ## Assets and privacy
 
 `src/photos.ts` defines the categories and display photographs in `public/photos`.
-The repository includes the portfolio's displayed name, signature, and reduced
+The repository includes the portfolio's displayed name, signature, and
 display images. Image metadata has been removed from published JPEG and PNG
 assets. Private originals in `seed/`, local environment files, credentials,
 dependencies, and generated build output are excluded from version control.

@@ -68,6 +68,26 @@ export const photos: readonly Photo[] = [
     focal: '50% 46%',
     wide: false,
   },
+  {
+    id: 'train-cab',
+    src: '/photos/07-documentary-train-cab.jpg',
+    alt: {
+      en: 'A man seated at the controls in a sunlit train cab',
+      zh: '阳光照进火车驾驶室，一名男子坐在操作台前',
+    },
+    focal: '50% 45%',
+    wide: true,
+  },
+  {
+    id: 'pigeons',
+    src: '/photos/08-film-pigeons.jpg',
+    alt: {
+      en: 'Children, pedestrians, and pigeons in a black-and-white street scene',
+      zh: '黑白街景中的孩子、行人与鸽子',
+    },
+    focal: '50% 50%',
+    wide: true,
+  },
 ]
 
 export type Category = {
@@ -82,6 +102,8 @@ export type Category = {
   canvasH: number
   /** Pixel height of the initial's ink, used to keep cap heights even. */
   inkH: number
+  /** Transparent pixels above the initial's visible ink. */
+  inkTop: number
   letterW: number
   restW: number
   photos: readonly Photo[]
@@ -98,9 +120,10 @@ export const categories: readonly Category[] = [
     seamDen: 338,
     canvasH: 341,
     inkH: 217,
+    inkTop: 36,
     letterW: 338,
     restW: 755,
-    photos: [],
+    photos: [photoById['train-cab']],
   },
   {
     id: 'landscape',
@@ -110,6 +133,7 @@ export const categories: readonly Category[] = [
     seamDen: 37,
     canvasH: 342,
     inkH: 243,
+    inkTop: 35,
     letterW: 370,
     restW: 732,
     photos: [photoById['sunset-acacia']],
@@ -122,6 +146,7 @@ export const categories: readonly Category[] = [
     seamDen: 101,
     canvasH: 328,
     inkH: 235,
+    inkTop: 36,
     letterW: 404,
     restW: 519,
     photos: [
@@ -140,9 +165,10 @@ export const categories: readonly Category[] = [
     seamDen: 70,
     canvasH: 298,
     inkH: 226,
+    inkTop: 36,
     letterW: 350,
     restW: 355,
-    photos: [],
+    photos: [photoById.pigeons],
   },
 ]
 

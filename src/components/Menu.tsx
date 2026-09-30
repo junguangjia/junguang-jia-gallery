@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { categories } from '../photos.ts'
 import { useLocale } from '../locale.tsx'
 import { Link } from './Link.tsx'
+import { LanguageToggle } from './LanguageToggle.tsx'
 
 type Props = {
   path: string
@@ -9,7 +10,7 @@ type Props = {
 }
 
 export function Menu({ path, onClose }: Props) {
-  const { t, toggleLocale } = useLocale()
+  const { t } = useLocale()
   const closeRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
@@ -19,9 +20,7 @@ export function Menu({ path, onClose }: Props) {
   return (
     <div className="overlay menu-overlay" role="dialog" aria-modal="true" aria-label={t.closeMenu}>
       <div className="overlay-bar">
-        <p className="site-title">
-          <img src="/signature.png" alt="Junguang Jia" />
-        </p>
+        <p className="site-title">{t.siteTitle}</p>
         <button ref={closeRef} type="button" className="text-button" onClick={onClose}>
           {t.close}
         </button>
@@ -49,17 +48,7 @@ export function Menu({ path, onClose }: Props) {
         >
           {t.information}
         </Link>
-        <button
-          type="button"
-          className="menu-link text-button"
-          onClick={() => {
-            toggleLocale()
-            onClose()
-          }}
-          aria-label={t.languageLabel}
-        >
-          {t.language}
-        </button>
+        <LanguageToggle onToggle={onClose} />
       </nav>
     </div>
   )
