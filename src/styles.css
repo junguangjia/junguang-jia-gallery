@@ -472,6 +472,12 @@ img { max-width: 100%; }
 
 .info p:last-of-type { margin-bottom: 0; }
 
+.info-quote { margin: 0 0 1.5rem; }
+
+.info .info-quote p { margin-bottom: 0.25rem; }
+
+.info-quote footer { font-size: 1rem; }
+
 .info-signature {
   display: flex;
   justify-content: flex-end;
