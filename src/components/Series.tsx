@@ -20,9 +20,9 @@ export function Series({ category, concealFirst = false }: Props) {
   let side = 0
   const lines =
     category.id === 'documentary'
-      ? [t.emptyDocumentary]
+      ? [t.documentaryLine, t.endLine]
       : category.id === 'film'
-        ? [t.emptyFilm]
+        ? [t.filmLine, t.endLine]
         : category.id === 'landscape'
           ? [t.landscapeLine, t.endLine]
           : [t.wildlifeCount, t.endLine]

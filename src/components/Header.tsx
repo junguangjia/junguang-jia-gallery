@@ -1,6 +1,7 @@
 import { categoryFromPath } from '../photos.ts'
 import { useLocale } from '../locale.tsx'
 import { Link } from './Link.tsx'
+import { LanguageToggle } from './LanguageToggle.tsx'
 
 type Props = {
   path: string
@@ -10,13 +11,13 @@ type Props = {
 }
 
 export function Header({ path, menuOpen, onMenu, onNavigate }: Props) {
-  const { t, toggleLocale } = useLocale()
+  const { t } = useLocale()
   const galleriesCurrent = path === '/' || Boolean(categoryFromPath(path))
 
   return (
     <header className="site-header">
       <Link href="/" className="site-title" onClick={onNavigate}>
-        <img src="/signature.png" alt="Junguang Jia" />
+        {t.siteTitle}
       </Link>
       <div className="header-tools">
         <nav className="desktop-nav" aria-label={t.galleries}>
@@ -26,9 +27,7 @@ export function Header({ path, menuOpen, onMenu, onNavigate }: Props) {
           <Link href="/information" current={path === '/information'} onClick={onNavigate}>
             {t.information}
           </Link>
-          <button type="button" className="text-button" onClick={toggleLocale} aria-label={t.languageLabel}>
-            {t.language}
-          </button>
+          <LanguageToggle />
         </nav>
         <button
           type="button"

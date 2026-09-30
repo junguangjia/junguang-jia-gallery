@@ -73,6 +73,11 @@ export function Home({ onOpen }: Props) {
   const [hovered, setHovered] = useState<string | null>(null)
   const [focused, setFocused] = useState<string | null>(null)
   const active = !coarsePointer && hovered ? hovered : focused
+  const activeCategory = categories.find((category) => category.id === active)
+  const wordOverhang = activeCategory
+    ? (activeCategory.letterW * activeCategory.seamNum / activeCategory.seamDen +
+        activeCategory.restW - activeCategory.letterW) / activeCategory.inkH
+    : 0
 
   const clearFocus = (id: string, event: FocusEvent<HTMLAnchorElement>) => {
     const next = event.relatedTarget
@@ -114,7 +119,12 @@ export function Home({ onOpen }: Props) {
           }}
           onMouseLeave={() => setHovered(null)}
         >
-          <ul ref={rowRef} className="category-row" data-active={active ? 'true' : 'false'}>
+          <ul
+            ref={rowRef}
+            className="category-row"
+            data-active={active ? 'true' : 'false'}
+            style={{ ['--word-overhang' as string]: wordOverhang }}
+          >
             {categories.map((category) => {
               const open = active === category.id
               return (
@@ -153,6 +163,7 @@ export function Home({ onOpen }: Props) {
                       style={{
                         ['--canvas-h' as string]: category.canvasH,
                         ['--ink-h' as string]: category.inkH,
+                        ['--ink-top' as string]: category.inkTop,
                         ['--letter-w' as string]: category.letterW,
                         ['--rest-w' as string]: category.restW,
                       }}
