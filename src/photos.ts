@@ -3,7 +3,10 @@ export type Photo = {
   src: string
   alt: { en: string; zh: string }
   focal: string
-  /** Wider, centered plate. Side plates are narrower and alternate left and right. */
+  /** Intrinsic dimensions reserve space before loading and determine orientation. */
+  width: number
+  height: number
+  /** Editorial alignment: centered or alternating sides; independent of image size. */
   wide: boolean
 }
 
@@ -11,6 +14,8 @@ export const photos: readonly Photo[] = [
   {
     id: 'sunset-acacia',
     src: '/photos/01-sunset-acacia.jpg',
+    width: 2000,
+    height: 1334,
     alt: {
       en: 'Acacia trees and an antelope at sunset',
       zh: '日落时的金合欢与羚羊',
@@ -21,6 +26,8 @@ export const photos: readonly Photo[] = [
   {
     id: 'oryx',
     src: '/photos/02-oryx.jpg',
+    width: 2000,
+    height: 1334,
     alt: {
       en: 'Two oryx standing in dry grassland',
       zh: '两只长角羚站在干草原上',
@@ -31,6 +38,8 @@ export const photos: readonly Photo[] = [
   {
     id: 'lioness',
     src: '/photos/03-lioness.jpg',
+    width: 1400,
+    height: 2100,
     alt: {
       en: 'Lioness looking toward the camera',
       zh: '看向镜头的母狮',
@@ -41,6 +50,8 @@ export const photos: readonly Photo[] = [
   {
     id: 'giraffes',
     src: '/photos/04-giraffes.jpg',
+    width: 2000,
+    height: 1740,
     alt: {
       en: 'Giraffes on a grassy hillside',
       zh: '草坡上的长颈鹿',
@@ -51,6 +62,8 @@ export const photos: readonly Photo[] = [
   {
     id: 'kingfisher',
     src: '/photos/05-kingfisher.jpg',
+    width: 1400,
+    height: 2100,
     alt: {
       en: 'Kingfisher perched on a bare branch',
       zh: '翠鸟停在枯枝上',
@@ -61,6 +74,8 @@ export const photos: readonly Photo[] = [
   {
     id: 'gazelle',
     src: '/photos/06-gazelle.jpg',
+    width: 1400,
+    height: 2100,
     alt: {
       en: 'Gazelle standing in dry grassland',
       zh: '站在干草原上的羚羊',
@@ -71,6 +86,8 @@ export const photos: readonly Photo[] = [
   {
     id: 'train-cab',
     src: '/photos/07-documentary-train-cab.jpg',
+    width: 6240,
+    height: 4160,
     alt: {
       en: 'A man seated at the controls in a sunlit train cab',
       zh: '阳光照进火车驾驶室，一名男子坐在操作台前',
@@ -81,6 +98,8 @@ export const photos: readonly Photo[] = [
   {
     id: 'pigeons',
     src: '/photos/08-film-pigeons.jpg',
+    width: 3024,
+    height: 2005,
     alt: {
       en: 'Children, pedestrians, and pigeons in a black-and-white street scene',
       zh: '黑白街景中的孩子、行人与鸽子',
