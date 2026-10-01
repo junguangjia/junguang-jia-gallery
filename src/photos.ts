@@ -104,6 +104,9 @@ export type Category = {
   inkH: number
   /** Transparent pixels above the initial's visible ink. */
   inkTop: number
+  /** Alpha-weighted optical center of the initial bitmap; remeasure if its artwork changes. */
+  letterCenterX: number
+  letterCenterY: number
   letterW: number
   restW: number
   photos: readonly Photo[]
@@ -121,6 +124,8 @@ export const categories: readonly Category[] = [
     canvasH: 341,
     inkH: 217,
     inkTop: 36,
+    letterCenterX: 169.613,
+    letterCenterY: 145.987,
     letterW: 338,
     restW: 755,
     photos: [photoById['train-cab']],
@@ -134,6 +139,8 @@ export const categories: readonly Category[] = [
     canvasH: 342,
     inkH: 243,
     inkTop: 35,
+    letterCenterX: 193.010,
+    letterCenterY: 178.890,
     letterW: 370,
     restW: 732,
     photos: [photoById['sunset-acacia']],
@@ -147,6 +154,8 @@ export const categories: readonly Category[] = [
     canvasH: 328,
     inkH: 235,
     inkTop: 36,
+    letterCenterX: 199.001,
+    letterCenterY: 158.786,
     letterW: 404,
     restW: 519,
     photos: [
@@ -166,6 +175,8 @@ export const categories: readonly Category[] = [
     canvasH: 298,
     inkH: 226,
     inkTop: 36,
+    letterCenterX: 159.528,
+    letterCenterY: 132.326,
     letterW: 350,
     restW: 355,
     photos: [photoById.pigeons],

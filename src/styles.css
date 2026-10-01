@@ -665,6 +665,11 @@ img { max-width: 100%; }
     align-items: center;
   }
 
+  .category-word {
+    /* Align visible stroke weight on the shared column and evenly spaced row centers. */
+    translate: calc(var(--cap) * var(--initial-offset-x)) calc(var(--cap) * var(--initial-offset-y));
+  }
+
   .category-row li,
   .category-row li:has(.category-title[data-open="true"]),
   .category-row li[data-yield="true"] {
@@ -673,9 +678,10 @@ img { max-width: 100%; }
   }
 
   .category-row li:has(.category-title[data-open="true"]) {
+    /* Cancel the initial's optical correction once the complete word is centered. */
     transform: translate3d(
-      calc(-0.5 * var(--cap) * var(--word-overhang)),
-      calc((1.5 - var(--category-index)) * var(--category-step) + var(--preview-shift)),
+      calc(-0.5 * var(--cap) * var(--word-overhang) - var(--cap) * var(--initial-offset-x)),
+      calc((1.5 - var(--category-index)) * var(--category-step) + var(--preview-shift) - var(--cap) * var(--initial-offset-y)),
       0
     );
   }

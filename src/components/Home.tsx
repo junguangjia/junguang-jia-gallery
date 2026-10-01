@@ -301,7 +301,11 @@ export function Home({ onOpen }: Props) {
                 <li
                   key={category.id}
                   data-yield={active && !open ? 'true' : 'false'}
-                  style={{ ['--category-index' as string]: index }}
+                  style={{
+                    ['--category-index' as string]: index,
+                    ['--initial-offset-x' as string]: (category.letterW / 2 - category.letterCenterX) / category.inkH,
+                    ['--initial-offset-y' as string]: (category.inkTop + category.inkH / 2 - category.letterCenterY) / category.inkH,
+                  }}
                   inert={mobile && Boolean(active) && !open}
                 >
                   <a
