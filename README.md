@@ -9,6 +9,13 @@ production photo collection below it.
 English is the default. The header and mobile menu provide a Chinese language
 switch. Photograph series scroll vertically and display the full images.
 
+On phones, tapping an initial opens its cover preview. Tap the cover or swipe up
+to enter the gallery; the back arrow and browser Back restore the initials.
+A small bottom-edge glow continuously suggests the upward gesture while the
+preview is open. It waits for the cover to load, pauses behind the menu, and uses
+a static glow when reduced motion is enabled. Short viewports omit the hint.
+The mobile menu contains Galleries, Information, and a visible EN / 中文 switch.
+
 ## Development
 
 Use Node.js 24 LTS and npm. Vite requires Node.js 20.19+ or 22.12+.
