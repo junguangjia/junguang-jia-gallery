@@ -13,7 +13,7 @@ export function Information() {
       <h1>{t.siteTitle}</h1>
       <blockquote className="info-quote">
         <p>“{t.infoQuote}”</p>
-        <footer>— Bruno Barbey</footer>
+        <footer>— {t.infoQuoteAuthor}</footer>
       </blockquote>
       <p>{t.infoBody}</p>
       <p>{t.infoPurpose}</p>

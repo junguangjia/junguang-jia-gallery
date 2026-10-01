@@ -16,9 +16,11 @@ export function Header({ path, menuOpen, onMenu, onNavigate }: Props) {
 
   return (
     <header className="site-header">
-      <Link href="/" className="site-title" onClick={onNavigate}>
-        {t.siteTitle}
-      </Link>
+      {path !== '/information' ? (
+        <Link href="/" className="site-title" onClick={onNavigate}>
+          {t.siteTitle}
+        </Link>
+      ) : null}
       <div className="header-tools">
         <nav className="desktop-nav" aria-label={t.galleries}>
           <Link href="/" current={galleriesCurrent} onClick={onNavigate}>

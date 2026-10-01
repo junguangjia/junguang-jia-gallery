@@ -19,7 +19,7 @@ export function Menu({ path, onClose }: Props) {
   return (
     <div className="overlay menu-overlay" role="dialog" aria-modal="true" aria-label={t.closeMenu}>
       <div className="overlay-bar">
-        <p className="site-title">{t.siteTitle}</p>
+        {path !== '/information' ? <p className="site-title">{t.siteTitle}</p> : null}
         <button ref={closeRef} type="button" className="menu-close" aria-label={t.closeMenu} onClick={onClose}>
           <span className="burger-lines" data-open="true" aria-hidden="true">
             <span />
