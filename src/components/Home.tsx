@@ -80,6 +80,20 @@ export function Home({ onOpen }: Props) {
   const suppressClickUntil = useRef(0)
   const closingPreview = useRef(false)
   const enteringGallery = useRef(false)
+  const keyboardInput = useRef(false)
+
+  useEffect(() => {
+    const onKey = () => { keyboardInput.current = true }
+    const onPointer = () => { keyboardInput.current = false }
+    window.addEventListener('keydown', onKey, true)
+    window.addEventListener('pointerdown', onPointer, true)
+    window.addEventListener('touchstart', onPointer, true)
+    return () => {
+      window.removeEventListener('keydown', onKey, true)
+      window.removeEventListener('pointerdown', onPointer, true)
+      window.removeEventListener('touchstart', onPointer, true)
+    }
+  }, [])
 
   useEffect(() => {
     const query = window.matchMedia(MOBILE_QUERY)
@@ -102,7 +116,14 @@ export function Home({ onOpen }: Props) {
       gestureRef.current = null
       suppressClickUntil.current = 0
       if (!next && selected && window.location.pathname === '/') {
-        rowRef.current?.querySelector<HTMLAnchorElement>(`[data-category="${selected}"]`)?.focus({ preventScroll: true })
+        if (keyboardInput.current) {
+          rowRef.current?.querySelector<HTMLAnchorElement>(`[data-category="${selected}"]`)?.focus({ preventScroll: true })
+        } else {
+          const focusedElement = document.activeElement
+          if (focusedElement instanceof HTMLElement && rowRef.current?.closest('.home')?.contains(focusedElement)) {
+            focusedElement.blur()
+          }
+        }
       }
     }
     window.addEventListener('popstate', syncPreview)
@@ -248,7 +269,7 @@ export function Home({ onOpen }: Props) {
           disabled={!active}
           onClick={closePreview}
         >
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" aria-hidden="true">
             <path d="m14 5-7 7 7 7M7 12h14" />
           </svg>
         </button>

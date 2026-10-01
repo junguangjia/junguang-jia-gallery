@@ -2,15 +2,16 @@ import { useLocale } from '../locale.tsx'
 
 type Props = {
   onToggle?: () => void
+  showLabel?: boolean
 }
 
-export function LanguageToggle({ onToggle }: Props) {
-  const { t, toggleLocale } = useLocale()
+export function LanguageToggle({ onToggle, showLabel = false }: Props) {
+  const { locale, t, toggleLocale } = useLocale()
 
   return (
     <button
       type="button"
-      className="language-toggle"
+      className={`language-toggle${showLabel ? ' language-toggle--labelled' : ''}`}
       aria-label={t.languageLabel}
       onClick={() => {
         toggleLocale()
@@ -31,6 +32,13 @@ export function LanguageToggle({ onToggle }: Props) {
         <ellipse cx="12" cy="12" rx="4" ry="9" />
         <path d="M3 12h18" />
       </svg>
+      {showLabel ? (
+        <span className="language-label" aria-hidden="true">
+          <span lang="en" data-current={locale === 'en'}>EN</span>
+          <span>/</span>
+          <span lang="zh-Hans" data-current={locale === 'zh'}>中文</span>
+        </span>
+      ) : null}
     </button>
   )
 }

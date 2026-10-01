@@ -142,6 +142,25 @@ img { max-width: 100%; }
   height: 1.25rem;
 }
 
+.language-toggle--labelled {
+  width: auto;
+  gap: 0.65rem;
+}
+
+.language-label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.language-label [data-current="true"] {
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
+  text-decoration-thickness: 1px;
+}
+
 .language-toggle:focus-visible {
   outline: 1px solid currentColor;
   outline-offset: 4px;
@@ -149,6 +168,14 @@ img { max-width: 100%; }
 
 .burger {
   display: none;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-close {
+  display: inline-flex;
   width: 3rem;
   height: 3rem;
   align-items: center;
@@ -225,7 +252,7 @@ img { max-width: 100%; }
 .home-back svg {
   width: 1.8rem;
   height: 1.8rem;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
 }
 
 .home-back[data-visible="true"] {
