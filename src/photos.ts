@@ -1,13 +1,27 @@
+import { coverOverrides, photoCatalog, seriesCatalog } from './photo-catalog.generated.ts'
+
 export type Photo = {
   id: string
   src: string
   alt: { en: string; zh: string }
   focal: string
-  /** Wider, centered plate. Side plates are narrower and alternate left and right. */
+  /** Horizontal photographs keep their full aspect ratio within the cover bounds. */
   wide: boolean
+  /** Natural dimensions reserve the image's aspect ratio before it loads. */
+  width?: number
+  height?: number
+  seriesId?: string
+  placement?: 'left' | 'right' | 'center'
+  plateSize?: 'large' | 'medium' | 'small'
+  plateInset?: 'outer' | 'middle' | 'inner'
 }
 
-export const photos: readonly Photo[] = [
+export type PhotoSeries = {
+  id: string
+  title: { en: string; zh: string }
+}
+
+const fixturePhotos: readonly Photo[] = [
   {
     id: 'sunset-acacia',
     src: '/photos/01-sunset-acacia.jpg',
@@ -90,6 +104,12 @@ export const photos: readonly Photo[] = [
   },
 ]
 
+// Production copies preserve the existing cover descriptions and focal points.
+export const photos: readonly Photo[] = fixturePhotos.map((photo) => ({
+  ...photo,
+  ...coverOverrides[photo.id],
+}))
+
 export type Category = {
   id: 'documentary' | 'landscape' | 'wildlife' | 'film'
   path: string
@@ -110,9 +130,14 @@ export type Category = {
   letterW: number
   restW: number
   photos: readonly Photo[]
+  series: readonly PhotoSeries[]
 }
 
 const photoById = Object.fromEntries(photos.map((photo) => [photo.id, photo])) as Record<string, Photo>
+const curatedPhotos = (catalog: readonly Photo[]) => catalog.map((photo) => ({
+  ...photo,
+  ...(photoById[photo.id] ? { alt: photoById[photo.id].alt, focal: photoById[photo.id].focal } : {}),
+}))
 
 export const categories: readonly Category[] = [
   {
@@ -128,7 +153,8 @@ export const categories: readonly Category[] = [
     letterCenterY: 145.987,
     letterW: 338,
     restW: 755,
-    photos: [photoById['train-cab']],
+    photos: curatedPhotos(photoCatalog.documentary),
+    series: seriesCatalog.documentary,
   },
   {
     id: 'landscape',
@@ -143,7 +169,8 @@ export const categories: readonly Category[] = [
     letterCenterY: 178.890,
     letterW: 370,
     restW: 732,
-    photos: [photoById['sunset-acacia']],
+    photos: curatedPhotos(photoCatalog.landscape),
+    series: seriesCatalog.landscape,
   },
   {
     id: 'wildlife',
@@ -158,13 +185,8 @@ export const categories: readonly Category[] = [
     letterCenterY: 158.786,
     letterW: 404,
     restW: 519,
-    photos: [
-      photoById.oryx,
-      photoById.lioness,
-      photoById.giraffes,
-      photoById.kingfisher,
-      photoById.gazelle,
-    ],
+    photos: curatedPhotos(photoCatalog.wildlife),
+    series: seriesCatalog.wildlife,
   },
   {
     id: 'film',
@@ -179,7 +201,8 @@ export const categories: readonly Category[] = [
     letterCenterY: 132.326,
     letterW: 350,
     restW: 355,
-    photos: [photoById.pigeons],
+    photos: curatedPhotos(photoCatalog.film),
+    series: seriesCatalog.film,
   },
 ]
 

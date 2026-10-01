@@ -11,6 +11,16 @@ node_modules
 dist
 dist-ssr
 *.local
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# Production photo library stays local; root-level development samples stay tracked.
+public/photos/documentary/
+public/photos/landscape/
+public/photos/wildlife/
+public/photos/film/
+src/photo-catalog.generated.ts
 
 # Private originals and local configuration
 seed/

@@ -522,6 +522,33 @@ img { max-width: 100%; }
 .plate--left img,
 .plate--right img { max-width: min(46vw, 760px); }
 
+/* Vary scale inside shared outer edges measured from the fitted cover. */
+.plate--large { --plate-scale: 1; }
+.plate--medium { --plate-scale: 0.85; }
+.plate--small { --plate-scale: 0.7; }
+.plate--landscape.plate--medium { --plate-scale: 0.91; }
+.plate--landscape.plate--small { --plate-scale: 0.8; }
+.plate:not(.plate--cover) {
+  padding-inline: max(0px, calc((100% - var(--cover-width, 74vw)) / 2));
+}
+
+.plate--small:not(.plate--cover) { min-height: 64vh; }
+.plate--medium:not(.plate--cover) { min-height: 72vh; }
+
+.plate:not(.plate--cover) img {
+  aspect-ratio: var(--photo-ratio);
+  max-width: 100%;
+  max-height: none;
+}
+
+.plate--landscape:not(.plate--cover) img {
+  width: min(100%, var(--photo-width), calc(var(--cover-width, 74vw) * var(--plate-scale)), calc(var(--cover-height, 88vh) * var(--plate-scale) * var(--photo-ratio)));
+}
+
+.plate--portrait:not(.plate--cover) img {
+  width: min(100%, var(--photo-width), calc(46vw * var(--plate-scale)), calc(760px * var(--plate-scale)), calc(88vh * var(--plate-scale) * var(--photo-ratio)));
+}
+
 .end-frame {
   min-height: 88vh;
   display: grid;
@@ -659,7 +686,8 @@ img { max-width: 100%; }
   .burger { display: inline-flex; }
   .plate,
   .plate--left,
-  .plate--right {
+  .plate--right,
+  .plate:not(.plate--cover) {
     justify-content: center;
     min-height: 0;
     padding: 2.5rem 1.15rem;
@@ -669,6 +697,23 @@ img { max-width: 100%; }
   .plate--center img {
     max-width: 100%;
     max-height: none;
+  }
+  .plate--left:not(.plate--cover) {
+    justify-content: flex-start;
+  }
+  .plate--right:not(.plate--cover) {
+    justify-content: flex-end;
+  }
+  .plate:not(.plate--cover) {
+    padding-inline: max(0px, calc((100% - var(--cover-width, calc(100% - 2.3rem))) / 2));
+  }
+  .plate--landscape.plate--medium { --plate-scale: 0.96; }
+  .plate--landscape.plate--small { --plate-scale: 0.9; }
+  .plate--landscape:not(.plate--cover) img {
+    width: min(100%, var(--photo-width), calc(var(--cover-width, 100%) * var(--plate-scale)), calc(var(--cover-height, 88vh) * var(--plate-scale) * var(--photo-ratio)));
+  }
+  .plate--portrait:not(.plate--cover) img {
+    width: min(100%, var(--photo-width), calc(var(--cover-width, 100%) * 0.86 * var(--plate-scale)));
   }
   .info { padding-top: 20vh; font-size: 1.15rem; }
   .info-signature img { width: 144px; }
