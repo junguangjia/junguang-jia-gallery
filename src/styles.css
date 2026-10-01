@@ -719,6 +719,50 @@ img { max-width: 100%; }
   .info-signature img { width: 144px; }
 }
 
+@media (max-width: 760px), (pointer: coarse) {
+  /* Keep document scrolling so Safari can collapse its native toolbar. */
+  html:has(.series:not(.series-empty)) {
+    scroll-snap-type: y mandatory;
+    scroll-padding-block: 0;
+  }
+
+  .series {
+    --frame-height: 100vh;
+    --frame-height: 100dvh;
+    --photo-space: max(1rem, calc(var(--frame-height) - var(--header-height) - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 2.5rem));
+    padding-top: 0;
+  }
+
+  .series .plate {
+    height: var(--frame-height);
+    min-height: var(--frame-height);
+    padding-top: calc(var(--header-height) + env(safe-area-inset-top) + 1rem);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 1.5rem);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .series .plate--cover img {
+    max-height: var(--photo-space);
+  }
+
+  .series .plate:not(.plate--cover) img {
+    width: min(100%, var(--photo-width), calc(var(--cover-width, 100%) * var(--plate-scale)), calc(var(--photo-space) * var(--photo-ratio)));
+  }
+
+  .series .plate--portrait:not(.plate--cover) img {
+    width: min(100%, var(--photo-width), calc(var(--cover-width, 100%) * 0.86 * var(--plate-scale)), calc(var(--photo-space) * var(--photo-ratio)));
+  }
+
+  .series .end-frame {
+    min-height: var(--frame-height);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    padding-block: calc(var(--header-height) + env(safe-area-inset-top)) env(safe-area-inset-bottom);
+  }
+
+}
+
 /* Match the interaction query, including touch tablets and narrow windows. */
 @media (max-width: 760px), (pointer: coarse) {
   .home-stage {
