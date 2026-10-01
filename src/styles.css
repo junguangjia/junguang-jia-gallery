@@ -736,6 +736,7 @@ img { max-width: 100%; }
   .series .plate {
     height: var(--frame-height);
     min-height: var(--frame-height);
+    align-items: flex-start;
     padding-top: calc(var(--header-height) + env(safe-area-inset-top) + 1rem);
     padding-bottom: calc(env(safe-area-inset-bottom) + 1.5rem);
     scroll-snap-align: start;
