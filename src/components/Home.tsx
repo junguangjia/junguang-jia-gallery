@@ -5,88 +5,63 @@ import { useLocale } from '../locale.tsx'
 const MOBILE_QUERY = '(max-width: 760px), (pointer: coarse)'
 const PREVIEW_STATE_KEY = 'galleryHomePreview'
 const SWIPE_HINT_DELAY = 900
-const SWIPE_HINT_DURATION = 2100
 
 function PreviewSwipeHint({ coverId, menuOpen }: { coverId: string; menuOpen: boolean }) {
   const [visible, setVisible] = useState(false)
-  const dismissRef = useRef(() => {})
 
   useEffect(() => {
     const image = document.getElementById(coverId)?.querySelector('img')
     if (!image) return
 
-    let dismissed = false
-    let scheduled = false
+    let disposed = false
+    let imageReady = image.complete && image.naturalWidth > 0
+    let shown = false
     let revealTimer: number | undefined
-    let removalTimer: number | undefined
     const viewport = window.visualViewport
     const fitsViewport = () => (viewport?.height ?? window.innerHeight) >= 480
-    const clearTimers = () => {
-      window.clearTimeout(revealTimer)
-      window.clearTimeout(removalTimer)
-    }
-    const dismiss = () => {
-      dismissed = true
-      clearTimers()
-      setVisible(false)
-    }
-    dismissRef.current = dismiss
-
-    const onReady = () => {
-      if (dismissed || scheduled || !image.naturalWidth) return
-      scheduled = true
+    const syncVisibility = () => {
+      if (disposed) return
+      if (!imageReady || !fitsViewport() || document.visibilityState !== 'visible') {
+        window.clearTimeout(revealTimer)
+        revealTimer = undefined
+        shown = false
+        setVisible(false)
+        return
+      }
+      if (shown || revealTimer !== undefined) return
       // Loading and activation must both be complete before the quiet interval starts.
       revealTimer = window.setTimeout(() => {
-        if (dismissed || !fitsViewport() || document.visibilityState !== 'visible') return
+        revealTimer = undefined
+        if (disposed || !fitsViewport() || document.visibilityState !== 'visible') return
+        shown = true
         setVisible(true)
-        removalTimer = window.setTimeout(dismiss, SWIPE_HINT_DURATION)
       }, SWIPE_HINT_DELAY)
     }
-    const onResize = () => {
-      if (!fitsViewport()) dismiss()
+    const onReady = () => {
+      imageReady = image.naturalWidth > 0
+      syncVisibility()
     }
-    const onVisibility = () => {
-      if (document.visibilityState !== 'visible') dismiss()
+    const onError = () => {
+      imageReady = false
+      syncVisibility()
     }
-    const passiveCapture = { capture: true, passive: true }
-    window.addEventListener('pointerdown', dismiss, passiveCapture)
-    window.addEventListener('touchstart', dismiss, passiveCapture)
-    window.addEventListener('click', dismiss, true)
-    window.addEventListener('keydown', dismiss, true)
-    window.addEventListener('popstate', dismiss)
-    window.addEventListener('resize', onResize)
-    viewport?.addEventListener('resize', onResize)
-    document.addEventListener('visibilitychange', onVisibility)
+    window.addEventListener('resize', syncVisibility)
+    viewport?.addEventListener('resize', syncVisibility)
+    document.addEventListener('visibilitychange', syncVisibility)
     image.addEventListener('load', onReady)
-    image.addEventListener('error', dismiss)
-
-    if (!fitsViewport() || document.visibilityState !== 'visible') dismiss()
-    if (image.complete) {
-      if (image.naturalWidth) onReady()
-      else dismiss()
-    }
+    image.addEventListener('error', onError)
+    syncVisibility()
 
     return () => {
-      dismissed = true
-      clearTimers()
-      dismissRef.current = () => {}
-      window.removeEventListener('pointerdown', dismiss, true)
-      window.removeEventListener('touchstart', dismiss, true)
-      window.removeEventListener('click', dismiss, true)
-      window.removeEventListener('keydown', dismiss, true)
-      window.removeEventListener('popstate', dismiss)
-      window.removeEventListener('resize', onResize)
-      viewport?.removeEventListener('resize', onResize)
-      document.removeEventListener('visibilitychange', onVisibility)
+      disposed = true
+      window.clearTimeout(revealTimer)
+      window.removeEventListener('resize', syncVisibility)
+      viewport?.removeEventListener('resize', syncVisibility)
+      document.removeEventListener('visibilitychange', syncVisibility)
       image.removeEventListener('load', onReady)
-      image.removeEventListener('error', dismiss)
+      image.removeEventListener('error', onError)
     }
   }, [coverId])
-
-  useEffect(() => {
-    // Closing the menu must not re-arm a hint already dismissed during this visit.
-    if (menuOpen) dismissRef.current()
-  }, [menuOpen])
 
   return visible && !menuOpen ? <div className="home-swipe-hint" aria-hidden="true" /> : null
 }
