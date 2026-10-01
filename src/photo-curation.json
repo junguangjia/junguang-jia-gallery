@@ -1,0 +1,2410 @@
+{
+  "categories": {
+    "documentary": [
+      {
+        "id": "railway-journeys",
+        "title": {
+          "en": "Railway Journeys",
+          "zh": "铁路旅途"
+        },
+        "photos": [
+          "documentary/07-documentary-train-cab.jpg",
+          "documentary/DSC04898.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "documentary/DSC04898.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "at-the-works",
+        "title": {
+          "en": "At the Works",
+          "zh": "工厂纪事"
+        },
+        "photos": [
+          "documentary/IMG_0901.JPG",
+          "documentary/IMG_0907.JPG",
+          "documentary/IMG_1263.JPG",
+          "documentary/pht-23.JPG",
+          "documentary/IMG_1273.JPG",
+          "documentary/IMG_1277.JPG",
+          "documentary/IMG_1268.JPG",
+          "documentary/IMG_1269.JPG",
+          "documentary/IMG_0904.JPG",
+          "documentary/IMG_1272.JPG",
+          "documentary/IMG_1280.JPG",
+          "documentary/IMG_0900.JPG",
+          "documentary/IMG_0899.jpg",
+          "documentary/IMG_0911.jpg",
+          "documentary/IMG_0914 2.jpg",
+          "documentary/IMG_1281.JPG",
+          "documentary/IMG_0902.JPG",
+          "documentary/IMG_0922.jpg",
+          "documentary/IMG_0935.jpg",
+          "documentary/IMG_0909.JPG",
+          "documentary/IMG_1266.JPG",
+          "documentary/IMG_1286.jpg",
+          "documentary/IMG_1284.jpg",
+          "documentary/IMG_0920.jpg",
+          "documentary/IMG_0908.JPG"
+        ],
+        "align": "right",
+        "layout": {
+          "documentary/IMG_0901.JPG": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/IMG_0907.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "documentary/IMG_1263.JPG": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "documentary/pht-23.JPG": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/IMG_1273.JPG": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "documentary/IMG_1277.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/IMG_1268.JPG": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "documentary/IMG_1269.JPG": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/IMG_0904.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "documentary/IMG_1272.JPG": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "documentary/IMG_1280.JPG": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/IMG_0900.JPG": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "documentary/IMG_0899.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/IMG_0911.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "documentary/IMG_0914 2.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/IMG_1281.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "documentary/IMG_0902.JPG": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "documentary/IMG_0922.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/IMG_0935.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "documentary/IMG_0909.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/IMG_1266.JPG": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "documentary/IMG_1286.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/IMG_1284.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "documentary/IMG_0920.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "documentary/IMG_0908.JPG": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "everyday-interiors",
+        "title": {
+          "en": "Everyday Interiors",
+          "zh": "屋内日常"
+        },
+        "photos": [
+          "documentary/Junguang Jia-05037.jpg",
+          "documentary/Junguang Jia-05028.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "documentary/Junguang Jia-05037.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "documentary/Junguang Jia-05028.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "temple-fair-musicians",
+        "title": {
+          "en": "Temple Fair Musicians",
+          "zh": "庙会乐人"
+        },
+        "photos": [
+          "documentary/20230202-DSC06620.jpg",
+          "documentary/20230202-DSC06832.jpg",
+          "documentary/20230202-DSC06644.jpg",
+          "documentary/20230202-DSC06527.jpg",
+          "documentary/20230202-DSC06514.jpg",
+          "documentary/20230202-DSC06520.jpg",
+          "documentary/20230202-DSC06542.jpg",
+          "documentary/20230202-DSC06554.jpg",
+          "documentary/20230202-DSC06573-已增强-降噪.jpg",
+          "documentary/20230202-DSC06659.jpg",
+          "documentary/20230202-DSC06800.jpg",
+          "documentary/20230202-DSC06677.jpg",
+          "documentary/20230202-DSC06764.jpg",
+          "documentary/20230202-DSC06753.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "documentary/20230202-DSC06620.jpg": {
+            "align": "center",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/20230202-DSC06832.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/20230202-DSC06644.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "documentary/20230202-DSC06527.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "documentary/20230202-DSC06514.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/20230202-DSC06520.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/20230202-DSC06542.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "middle"
+          },
+          "documentary/20230202-DSC06554.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "documentary/20230202-DSC06573-已增强-降噪.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "inner"
+          },
+          "documentary/20230202-DSC06659.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "documentary/20230202-DSC06800.jpg": {
+            "align": "center",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/20230202-DSC06677.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/20230202-DSC06764.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "documentary/20230202-DSC06753.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "opera-on-stage",
+        "title": {
+          "en": "Opera on Stage",
+          "zh": "戏台之上"
+        },
+        "photos": [
+          "documentary/DSC08159.jpg",
+          "documentary/DSC09021.jpg",
+          "documentary/DSC08684.jpg",
+          "documentary/DSC08990.jpg",
+          "documentary/DSC09547.jpg",
+          "documentary/DSC09585.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "documentary/DSC08159.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "documentary/DSC09021.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "documentary/DSC08684.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          },
+          "documentary/DSC08990.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/DSC09547.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/DSC09585.jpg": {
+            "align": "center",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "carved-devotion",
+        "title": {
+          "en": "Carved Devotion",
+          "zh": "石刻与信仰"
+        },
+        "photos": [
+          "landscape/DSC09736.JPG",
+          "landscape/DSC09740.JPG",
+          "documentary/DSC09240.jpg",
+          "documentary/DSC09250.jpg",
+          "documentary/DSC09268.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC09736.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC09740.JPG": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "documentary/DSC09240.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/DSC09250.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "documentary/DSC09268.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "hong-kong-after-dark",
+        "title": {
+          "en": "Hong Kong after Dark",
+          "zh": "香港入夜"
+        },
+        "photos": [
+          "documentary/DSC00593.jpg",
+          "documentary/DSC00603.jpg",
+          "documentary/DSC00614.jpg",
+          "documentary/DSC00621.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "documentary/DSC00593.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/DSC00603.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/DSC00614.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "documentary/DSC00621.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "night-market",
+        "title": {
+          "en": "The Night Market",
+          "zh": "夜市人间"
+        },
+        "photos": [
+          "documentary/DSC00676.jpg",
+          "documentary/DSC00681.jpg",
+          "documentary/DSC00853.jpg",
+          "documentary/DSC00856.jpg",
+          "documentary/DSC00863.jpg",
+          "documentary/DSC00868.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "documentary/DSC00676.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "documentary/DSC00681.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "documentary/DSC00853.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/DSC00856.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/DSC00863.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "middle"
+          },
+          "documentary/DSC00868.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "moments-of-prayer",
+        "title": {
+          "en": "Moments of Prayer",
+          "zh": "祈拜时刻"
+        },
+        "photos": [
+          "documentary/DSC00875.jpg",
+          "documentary/DSC00874.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "documentary/DSC00875.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/DSC00874.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "times-square-in-the-rain",
+        "title": {
+          "en": "Times Square in the Rain",
+          "zh": "雨中的时代广场"
+        },
+        "photos": [
+          "landscape/DSC08137-2.jpg",
+          "landscape/DSC08215-2.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC08137-2.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC08215-2.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "village-homes",
+        "title": {
+          "en": "Village Homes",
+          "zh": "村落与家"
+        },
+        "photos": [
+          "documentary/DSC03020.jpg",
+          "documentary/DSC03263.jpg",
+          "documentary/DSC03265.jpg",
+          "documentary/DSC03268.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "documentary/DSC03020.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "documentary/DSC03263.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          },
+          "documentary/DSC03265.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "middle"
+          },
+          "documentary/DSC03268.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "play-beneath-the-tree",
+        "title": {
+          "en": "Play beneath the Tree",
+          "zh": "树下的游戏"
+        },
+        "photos": [
+          "documentary/DSC03055.jpg",
+          "documentary/DSC03067.jpg",
+          "documentary/DSC03079.jpg",
+          "documentary/L1009092.jpg",
+          "documentary/DSC03282.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "documentary/DSC03055.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/DSC03067.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/DSC03079.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "middle"
+          },
+          "documentary/L1009092.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "documentary/DSC03282.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "childhood-portraits",
+        "title": {
+          "en": "Childhood Portraits",
+          "zh": "童年肖像"
+        },
+        "photos": [
+          "documentary/DSC03114.jpg",
+          "documentary/DSC03120.jpg",
+          "documentary/DSC03121.jpg",
+          "documentary/DSC03142.jpg",
+          "documentary/DSC03146.jpg",
+          "documentary/DSC04358.jpg",
+          "documentary/DSC04374.jpg",
+          "documentary/DSC03200.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "documentary/DSC03114.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/DSC03120.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "documentary/DSC03121.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "documentary/DSC03142.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "documentary/DSC03146.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "documentary/DSC04358.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          },
+          "documentary/DSC04374.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/DSC03200.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "roadside-markets",
+        "title": {
+          "en": "Roadside Markets",
+          "zh": "路边市集"
+        },
+        "photos": [
+          "documentary/L1009226.jpg",
+          "landscape/DSC00326.jpg",
+          "documentary/IMG_2141.JPG",
+          "documentary/DSC03423.jpg",
+          "documentary/DSC07190.jpg",
+          "documentary/DSC04914.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "documentary/L1009226.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "landscape/DSC00326.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "documentary/IMG_2141.JPG": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/DSC03423.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "documentary/DSC07190.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/DSC04914.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "quiet-encounters",
+        "title": {
+          "en": "Quiet Encounters",
+          "zh": "静静相遇"
+        },
+        "photos": [
+          "documentary/DSC04983.JPG",
+          "documentary/DSC07032.JPG"
+        ],
+        "align": "left",
+        "layout": {
+          "documentary/DSC04983.JPG": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/DSC07032.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "on-the-water",
+        "title": {
+          "en": "On the Water",
+          "zh": "水上的人"
+        },
+        "photos": [
+          "documentary/DSC07295.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "documentary/DSC07295.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "on-patrol",
+        "title": {
+          "en": "On Patrol",
+          "zh": "巡护途中"
+        },
+        "photos": [
+          "documentary/L1040848.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "documentary/L1040848.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "desert-drive",
+        "title": {
+          "en": "Desert Drive",
+          "zh": "驶过荒野"
+        },
+        "photos": [
+          "landscape/DSC09228.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC09228.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          }
+        }
+      }
+    ],
+    "landscape": [
+      {
+        "id": "trees-in-warm-light",
+        "title": {
+          "en": "Trees in Warm Light",
+          "zh": "暖光里的树"
+        },
+        "photos": [
+          "landscape/01-sunset-acacia.jpg",
+          "landscape/DSC07506.jpg",
+          "landscape/DSC07465.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "landscape/DSC07506.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC07465.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "earth-from-above",
+        "title": {
+          "en": "Earth from Above",
+          "zh": "俯瞰大地"
+        },
+        "photos": [
+          "landscape/DJI_0094.jpg",
+          "landscape/DJI_0103.jpg",
+          "landscape/DJI_0068.jpg",
+          "landscape/DJI_0135.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DJI_0094.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DJI_0103.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "landscape/DJI_0068.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "landscape/DJI_0135.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "high-altitude",
+        "title": {
+          "en": "High Altitude",
+          "zh": "高山行迹"
+        },
+        "photos": [
+          "landscape/DSC05520.jpg",
+          "landscape/DSC05565.jpg",
+          "landscape/DSC06556.jpg",
+          "landscape/DSC05698-HDR.jpg",
+          "landscape/DSC05760.jpg",
+          "landscape/DSC05811.jpg",
+          "landscape/DSC05931.jpg",
+          "landscape/DSC06063.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC05520.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "landscape/DSC05565.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "inner"
+          },
+          "landscape/DSC06556.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "landscape/DSC05698-HDR.jpg": {
+            "align": "center",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC05760.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC05811.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "landscape/DSC05931.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "landscape/DSC06063.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "snow-peaks",
+        "title": {
+          "en": "Snow Peaks",
+          "zh": "雪峰"
+        },
+        "photos": [
+          "landscape/DSC09282.jpg",
+          "landscape/DSC09346-HDR.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "landscape/DSC09282.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC09346-HDR.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "granite-valley",
+        "title": {
+          "en": "Granite Valley",
+          "zh": "花岗岩山谷"
+        },
+        "photos": [
+          "landscape/DSC09217-2.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC09217-2.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "still-lake",
+        "title": {
+          "en": "Still Lake",
+          "zh": "静湖"
+        },
+        "photos": [
+          "landscape/DSC09202.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "landscape/DSC09202.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "lake-under-stars",
+        "title": {
+          "en": "Lake under Stars",
+          "zh": "星空下的湖"
+        },
+        "photos": [
+          "landscape/DSC09292-Pano.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC09292-Pano.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "forest-interior",
+        "title": {
+          "en": "Forest Interior",
+          "zh": "林间"
+        },
+        "photos": [
+          "landscape/DSC09356-HDR.jpg",
+          "landscape/DSC09359.jpg",
+          "landscape/DSC09519-HDR-2.jpg",
+          "landscape/DSC09386.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "landscape/DSC09356-HDR.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "landscape/DSC09359.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "landscape/DSC09519-HDR-2.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          },
+          "landscape/DSC09386.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "roots-and-branches",
+        "title": {
+          "en": "Roots and Branches",
+          "zh": "根与枝"
+        },
+        "photos": [
+          "landscape/DSC08441-2.JPG"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC08441-2.JPG": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "island-contours",
+        "title": {
+          "en": "Island Contours",
+          "zh": "岛屿轮廓"
+        },
+        "photos": [
+          "landscape/DSC08044.jpg",
+          "landscape/DSC08046.jpg",
+          "landscape/DSC08010.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "landscape/DSC08044.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC08046.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "landscape/DSC08010.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "waterfalls",
+        "title": {
+          "en": "Waterfalls",
+          "zh": "瀑布"
+        },
+        "photos": [
+          "landscape/DSC02838.jpg",
+          "landscape/DSC06837.jpg",
+          "landscape/DSC06849.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC02838.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC06837.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "landscape/DSC06849.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "river-in-motion",
+        "title": {
+          "en": "River in Motion",
+          "zh": "奔流"
+        },
+        "photos": [
+          "landscape/DSC09824.JPG"
+        ],
+        "align": "left",
+        "layout": {
+          "landscape/DSC09824.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "highland-settlements",
+        "title": {
+          "en": "Highland Settlements",
+          "zh": "高原聚落"
+        },
+        "photos": [
+          "landscape/DSC09247.JPG",
+          "landscape/DSC09552.JPG",
+          "landscape/DSC09581.JPG"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC09247.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC09552.JPG": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "landscape/DSC09581.JPG": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "palace-courtyards",
+        "title": {
+          "en": "Palace Courtyards",
+          "zh": "宫城院落"
+        },
+        "photos": [
+          "landscape/DSC00946.jpg",
+          "landscape/DSC00953.jpg",
+          "landscape/DSC00940.jpg",
+          "landscape/DSC00965.jpg",
+          "landscape/DSC00984.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "landscape/DSC00946.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          },
+          "landscape/DSC00953.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "middle"
+          },
+          "landscape/DSC00940.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC00965.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "landscape/DSC00984.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "temple-at-night",
+        "title": {
+          "en": "Temple at Night",
+          "zh": "夜色庙宇"
+        },
+        "photos": [
+          "landscape/DSC00666.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC00666.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "city-spire",
+        "title": {
+          "en": "City Spire",
+          "zh": "城市尖塔"
+        },
+        "photos": [
+          "landscape/DSC04923.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "landscape/DSC04923.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "fort-at-the-water",
+        "title": {
+          "en": "Fort at the Water",
+          "zh": "水畔古堡"
+        },
+        "photos": [
+          "landscape/DSC04521.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC04521.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "city-after-dark",
+        "title": {
+          "en": "City after Dark",
+          "zh": "城市入夜"
+        },
+        "photos": [
+          "landscape/DSC00395.jpg",
+          "landscape/DSC00426.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "landscape/DSC00395.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC00426.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          }
+        }
+      }
+    ],
+    "wildlife": [
+      {
+        "id": "oryx-in-grassland",
+        "title": {
+          "en": "Oryx in Grassland",
+          "zh": "草原上的长角羚"
+        },
+        "photos": [
+          "wildlife/02-oryx.jpg",
+          "wildlife/DSC03262-2.jpg",
+          "wildlife/DSC04728.JPG",
+          "wildlife/DSC03444-2.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "wildlife/DSC03262-2.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "wildlife/DSC04728.JPG": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "wildlife/DSC03444-2.jpg": {
+            "align": "center",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "grassland-antelopes",
+        "title": {
+          "en": "Grassland Antelopes",
+          "zh": "草原羚群"
+        },
+        "photos": [
+          "landscape/DSC05373.jpg",
+          "wildlife/06-gazelle.jpg",
+          "wildlife/DSC04184.jpg",
+          "wildlife/DSC02994.jpg",
+          "wildlife/DSC01599.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "landscape/DSC05373.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "wildlife/06-gazelle.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "wildlife/DSC04184.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "middle"
+          },
+          "wildlife/DSC02994.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "wildlife/DSC01599.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "among-acacias",
+        "title": {
+          "en": "Among Acacias",
+          "zh": "金合欢间的长颈鹿"
+        },
+        "photos": [
+          "wildlife/04-giraffes.jpg",
+          "wildlife/DSC05311.jpg",
+          "wildlife/DSC04598.jpg",
+          "wildlife/DSC04632.jpg",
+          "wildlife/DSC02212.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "wildlife/04-giraffes.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "wildlife/DSC05311.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "wildlife/DSC04598.jpg": {
+            "align": "center",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "wildlife/DSC04632.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "wildlife/DSC02212.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "zebras",
+        "title": {
+          "en": "Zebras",
+          "zh": "斑马"
+        },
+        "photos": [
+          "wildlife/DSC05110.jpg",
+          "wildlife/DSC05164.JPG",
+          "wildlife/DSC04917.jpg",
+          "wildlife/DSC00336.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "wildlife/DSC05110.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "wildlife/DSC05164.JPG": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "wildlife/DSC04917.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "wildlife/DSC00336.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "elephants",
+        "title": {
+          "en": "Elephants",
+          "zh": "象群"
+        },
+        "photos": [
+          "wildlife/DSC00868-2.jpg",
+          "wildlife/DSC00393.jpg",
+          "wildlife/DSC02777-2.jpg",
+          "wildlife/DSC00970.jpg",
+          "wildlife/DSC03685.jpg",
+          "wildlife/DSC01783.jpg",
+          "wildlife/DSC01623-2.jpg",
+          "wildlife/DSC03949.jpg",
+          "wildlife/DSC03988.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "wildlife/DSC00868-2.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "wildlife/DSC00393.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "wildlife/DSC02777-2.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "wildlife/DSC00970.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          },
+          "wildlife/DSC03685.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "middle"
+          },
+          "wildlife/DSC01783.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "wildlife/DSC01623-2.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "wildlife/DSC03949.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "wildlife/DSC03988.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "lions",
+        "title": {
+          "en": "Lions",
+          "zh": "狮群"
+        },
+        "photos": [
+          "wildlife/03-lioness.jpg",
+          "wildlife/DSC02472.jpg",
+          "wildlife/DSC04271.jpg",
+          "wildlife/DSC07086.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "wildlife/03-lioness.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "middle"
+          },
+          "wildlife/DSC02472.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "wildlife/DSC04271.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "inner"
+          },
+          "wildlife/DSC07086.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "rhinoceros",
+        "title": {
+          "en": "Rhinoceros",
+          "zh": "犀牛"
+        },
+        "photos": [
+          "wildlife/DSC05280.jpg",
+          "wildlife/L1040818.jpg",
+          "wildlife/DSC05073.jpg",
+          "wildlife/DSC05714.jpg",
+          "wildlife/DSC05817.jpg",
+          "wildlife/DSC06015.jpg",
+          "wildlife/L1050072.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "wildlife/DSC05280.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "wildlife/L1040818.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "wildlife/DSC05073.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "wildlife/DSC05714.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "wildlife/DSC05817.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "wildlife/DSC06015.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          },
+          "wildlife/L1050072.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "warthogs",
+        "title": {
+          "en": "Warthogs",
+          "zh": "疣猪"
+        },
+        "photos": [
+          "wildlife/DSC00381.jpg",
+          "wildlife/DSC04616.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "wildlife/DSC00381.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "wildlife/DSC04616.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "jackal",
+        "title": {
+          "en": "The Hunt",
+          "zh": "捕猎"
+        },
+        "photos": [
+          "wildlife/DSC05183.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "wildlife/DSC05183.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "monkey",
+        "title": {
+          "en": "A Quiet Encounter",
+          "zh": "林间相遇"
+        },
+        "photos": [
+          "wildlife/DSC03442.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "wildlife/DSC03442.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "buffalo",
+        "title": {
+          "en": "Buffalo at the Water",
+          "zh": "水畔的水牛"
+        },
+        "photos": [
+          "wildlife/DSC03494.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "wildlife/DSC03494.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "hippos",
+        "title": {
+          "en": "At the Surface",
+          "zh": "浮出水面"
+        },
+        "photos": [
+          "wildlife/DSC04228.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "wildlife/DSC04228.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "the-crossing",
+        "title": {
+          "en": "The Crossing",
+          "zh": "迁徙"
+        },
+        "photos": [
+          "wildlife/DSC09074.jpg",
+          "wildlife/DSC04591.jpg",
+          "wildlife/DSC04646.jpg",
+          "wildlife/DSC08681.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "wildlife/DSC09074.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "wildlife/DSC04591.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "wildlife/DSC04646.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "wildlife/DSC08681.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "birds-by-water",
+        "title": {
+          "en": "Birds by the Water",
+          "zh": "水边的鸟"
+        },
+        "photos": [
+          "wildlife/DSC03601.jpg",
+          "wildlife/DSC03757.jpg",
+          "wildlife/DSC03854.jpg",
+          "wildlife/DSC03640.jpg",
+          "wildlife/DSC05704.jpg",
+          "wildlife/DSC07374.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "wildlife/DSC03601.jpg": {
+            "align": "center",
+            "size": "large",
+            "inset": "outer"
+          },
+          "wildlife/DSC03757.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "wildlife/DSC03854.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "wildlife/DSC03640.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "wildlife/DSC05704.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "wildlife/DSC07374.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "perches-and-beaks",
+        "title": {
+          "en": "Perches and Beaks",
+          "zh": "枝头与喙"
+        },
+        "photos": [
+          "wildlife/05-kingfisher.jpg",
+          "wildlife/DSC03003.jpg",
+          "wildlife/DSC04375.jpg",
+          "wildlife/DSC04069.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "wildlife/05-kingfisher.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "wildlife/DSC03003.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "wildlife/DSC04375.jpg": {
+            "align": "center",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "wildlife/DSC04069.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "crocodiles",
+        "title": {
+          "en": "Crocodiles",
+          "zh": "鳄鱼"
+        },
+        "photos": [
+          "wildlife/DSC03556.jpg",
+          "wildlife/DSC03588.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "wildlife/DSC03556.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "wildlife/DSC03588.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "lizards",
+        "title": {
+          "en": "Lizards",
+          "zh": "蜥蜴"
+        },
+        "photos": [
+          "wildlife/DSC03102.jpg",
+          "wildlife/DSC07646.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "wildlife/DSC03102.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "middle"
+          },
+          "wildlife/DSC07646.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "chameleons",
+        "title": {
+          "en": "Chameleons",
+          "zh": "变色龙"
+        },
+        "photos": [
+          "wildlife/DSC06505.jpg",
+          "wildlife/DSC07681.JPG",
+          "wildlife/DSC07707.jpg",
+          "wildlife/DSC07047.JPG",
+          "wildlife/DSC07057.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "wildlife/DSC06505.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "wildlife/DSC07681.JPG": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "wildlife/DSC07707.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "wildlife/DSC07047.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "wildlife/DSC07057.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "lemurs",
+        "title": {
+          "en": "Lemurs",
+          "zh": "狐猴"
+        },
+        "photos": [
+          "wildlife/DSC05855.jpg",
+          "wildlife/DSC05982.jpg",
+          "wildlife/DSC05885.jpg",
+          "wildlife/DSC05892.jpg",
+          "wildlife/DSC06162.jpg",
+          "wildlife/DSC06181.jpg",
+          "wildlife/DSC06295.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "wildlife/DSC05855.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "wildlife/DSC05982.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "wildlife/DSC05885.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "wildlife/DSC05892.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "wildlife/DSC06162.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "wildlife/DSC06181.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          },
+          "wildlife/DSC06295.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      }
+    ],
+    "film": [
+      {
+        "id": "film-feeding-pigeons",
+        "title": {
+          "en": "Feeding Pigeons",
+          "zh": "喂鸽"
+        },
+        "photos": [
+          "film/08-film-pigeons.jpg",
+          "film/000046190019.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "film/000046190019.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "film-old-town-day",
+        "title": {
+          "en": "An old town by day",
+          "zh": "古城白昼"
+        },
+        "photos": [
+          "film/000046130006.jpg",
+          "film/000046130011.jpg",
+          "film/000046130016.jpg",
+          "film/000046130015.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "film/000046130006.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "film/000046130011.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "film/000046130016.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          },
+          "film/000046130015.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "film-old-town-night",
+        "title": {
+          "en": "An old town after dark",
+          "zh": "古城入夜"
+        },
+        "photos": [
+          "film/000046170033.jpg",
+          "film/000051850019.jpg",
+          "film/000051850031.jpg",
+          "film/000046170034.jpg",
+          "film/000046190003.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "film/000046170033.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "film/000051850019.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "film/000051850031.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "film/000046170034.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "film/000046190003.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "film-mountain-paths",
+        "title": {
+          "en": "Mountains and footpaths",
+          "zh": "山峦与步道"
+        },
+        "photos": [
+          "film/000046170011.jpg",
+          "film/000046170012.jpg",
+          "film/000046170013.jpg",
+          "film/000046170015.jpg",
+          "film/000046190038.jpg",
+          "film/000051850007.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "film/000046170011.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "film/000046170012.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "film/000046170013.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "film/000046170015.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "film/000046190038.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "film/000051850007.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "film-park",
+        "title": {
+          "en": "An afternoon in the park",
+          "zh": "公园午后"
+        },
+        "photos": [
+          "film/000046200012.jpg",
+          "film/000046200018.jpg",
+          "film/000046200014.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "film/000046200012.jpg": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "film/000046200018.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "film/000046200014.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "film-city-lines",
+        "title": {
+          "en": "City architecture",
+          "zh": "城市建筑"
+        },
+        "photos": [
+          "film/IMG_2012.jpg",
+          "film/fa1375706pf58d803d64f347201920e7.JPG"
+        ],
+        "align": "left",
+        "layout": {
+          "film/IMG_2012.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "film/fa1375706pf58d803d64f347201920e7.JPG": {
+            "align": "right",
+            "size": "medium",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "film-shops",
+        "title": {
+          "en": "Markets and shelves",
+          "zh": "市场与货架"
+        },
+        "photos": [
+          "film/203d1b299n7215c58e27af32a79d7489.JPG",
+          "film/a08f98097r53114e61f18a7806ea6877.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "film/203d1b299n7215c58e27af32a79d7489.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "film/a08f98097r53114e61f18a7806ea6877.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "film-painting",
+        "title": {
+          "en": "At the painting desk",
+          "zh": "画案旁"
+        },
+        "photos": [
+          "film/44ba1a710gc1ffaefd2bdb00c1ca8963.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "film/44ba1a710gc1ffaefd2bdb00c1ca8963.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          }
+        }
+      },
+      {
+        "id": "film-home",
+        "title": {
+          "en": "Portraits at home",
+          "zh": "家中肖像"
+        },
+        "photos": [
+          "film/fd3c0e24ar1e59f07c18671151cf5bf8.JPG",
+          "film/b67674631n48bd5eddf0007de849a619.jpg",
+          "film/39d02b70ave9298d6f09d66fd38b32b5.jpg",
+          "film/6f472a35frae77164fa4b53a2979d8b6.jpg",
+          "film/17614f537jf9ec4eae11a3e7a11c893f.JPG",
+          "film/904e5820crd3424f47cb05db8459ea42.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "film/fd3c0e24ar1e59f07c18671151cf5bf8.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "film/b67674631n48bd5eddf0007de849a619.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "middle"
+          },
+          "film/39d02b70ave9298d6f09d66fd38b32b5.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "film/6f472a35frae77164fa4b53a2979d8b6.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "inner"
+          },
+          "film/17614f537jf9ec4eae11a3e7a11c893f.JPG": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "film/904e5820crd3424f47cb05db8459ea42.jpg": {
+            "align": "center",
+            "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "film-rural-days",
+        "title": {
+          "en": "Village roads and fields",
+          "zh": "村落、道路与田野"
+        },
+        "photos": [
+          "film/7d4f0c4c7oc87d0b6cf37e6da96ccf20.JPG",
+          "film/01332a053qd48880ff1e82412c2865c9.JPG",
+          "film/000046140013.jpg",
+          "film/8c2d0dfeajc78550e2fec71b95cfc9ba.JPG",
+          "film/IMG_2290.JPG",
+          "film/ca31a11a7lc05eb0865caa4a40e3b898.JPG"
+        ],
+        "align": "left",
+        "layout": {
+          "film/7d4f0c4c7oc87d0b6cf37e6da96ccf20.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "film/01332a053qd48880ff1e82412c2865c9.JPG": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "film/000046140013.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          },
+          "film/8c2d0dfeajc78550e2fec71b95cfc9ba.JPG": {
+            "align": "left",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "film/IMG_2290.JPG": {
+            "align": "left",
+            "size": "small",
+            "inset": "inner"
+          },
+          "film/ca31a11a7lc05eb0865caa4a40e3b898.JPG": {
+            "align": "right",
+            "size": "large",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "film-garden-details",
+        "title": {
+          "en": "Garden details",
+          "zh": "园中细节"
+        },
+        "photos": [
+          "film/2d77263f3g9d416815edd96a82c19a51.JPG",
+          "film/IMG_2292.JPG",
+          "film/IMG_2293.JPG",
+          "film/f316f4927na3f0acab81b2f0655b2e8f.JPG"
+        ],
+        "align": "right",
+        "layout": {
+          "film/2d77263f3g9d416815edd96a82c19a51.JPG": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "film/IMG_2292.JPG": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "film/IMG_2293.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "film/f316f4927na3f0acab81b2f0655b2e8f.JPG": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "film-water",
+        "title": {
+          "en": "Water and horizon",
+          "zh": "水面与远方"
+        },
+        "photos": [
+          "film/000046190015.jpg",
+          "film/IMG_0068.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "film/000046190015.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "film/IMG_0068.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          }
+        }
+      }
+    ]
+  },
+  "excluded": [
+    {
+      "source": "documentary/DSC03079 2.jpg",
+      "duplicateOf": "documentary/DSC03079.jpg"
+    },
+    {
+      "source": "landscape/DSC_5975.JPG",
+      "duplicateOf": "landscape/01-sunset-acacia.jpg"
+    },
+    {
+      "source": "wildlife/DSC04271 2.jpg",
+      "duplicateOf": "wildlife/DSC04271.jpg"
+    },
+    {
+      "source": "documentary/DSC00395.jpg",
+      "duplicateOf": "landscape/DSC00395.jpg"
+    },
+    {
+      "source": "documentary/DSC00426.jpg",
+      "duplicateOf": "landscape/DSC00426.jpg"
+    },
+    {
+      "source": "landscape/DSC00593.jpg",
+      "duplicateOf": "documentary/DSC00593.jpg"
+    },
+    {
+      "source": "landscape/DSC00603.jpg",
+      "duplicateOf": "documentary/DSC00603.jpg"
+    },
+    {
+      "source": "landscape/DSC00614.jpg",
+      "duplicateOf": "documentary/DSC00614.jpg"
+    },
+    {
+      "source": "landscape/DSC00621.jpg",
+      "duplicateOf": "documentary/DSC00621.jpg"
+    },
+    {
+      "source": "wildlife/DSC03265.jpg",
+      "duplicateOf": "documentary/DSC03265.jpg"
+    },
+    {
+      "source": "landscape/DSC09240.jpg",
+      "duplicateOf": "documentary/DSC09240.jpg"
+    },
+    {
+      "source": "landscape/DSC09250.jpg",
+      "duplicateOf": "documentary/DSC09250.jpg"
+    },
+    {
+      "source": "landscape/DSC09268.jpg",
+      "duplicateOf": "documentary/DSC09268.jpg"
+    },
+    {
+      "source": "documentary/DSC07057.jpg",
+      "duplicateOf": "wildlife/DSC07057.jpg"
+    },
+    {
+      "source": "documentary/DSC07646.jpg",
+      "duplicateOf": "wildlife/DSC07646.jpg"
+    },
+    {
+      "source": "documentary/DSC07707.jpg",
+      "duplicateOf": "wildlife/DSC07707.jpg"
+    }
+  ]
+}
