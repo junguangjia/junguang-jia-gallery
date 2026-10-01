@@ -736,12 +736,23 @@ img { max-width: 100%; }
   .series .plate {
     height: var(--frame-height);
     min-height: var(--frame-height);
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    /* Leave one part of the free space above the photo and two below it. */
+    grid-template-rows: minmax(0, 1fr) auto minmax(0, 2fr);
     padding-top: calc(var(--header-height) + env(safe-area-inset-top) + 1rem);
     padding-bottom: calc(env(safe-area-inset-bottom) + 1.5rem);
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
+
+  .series .plate img {
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .series .plate--left:not(.plate--cover) img { justify-self: start; }
+  .series .plate--right:not(.plate--cover) img { justify-self: end; }
 
   .series .plate--cover img {
     max-height: var(--photo-space);
