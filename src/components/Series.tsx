@@ -36,11 +36,14 @@ export function Series({ category, concealFirst = false }: Props) {
       {photos.map((photo, index) => {
         const align = photo.wide ? 'center' : side++ % 2 === 0 ? 'left' : 'right'
         return (
-          <figure key={photo.id} id={photo.id} className={`plate plate--${align}`}>
+          <figure key={photo.id} id={photo.id} className={`plate plate--${align}${photo.width > photo.height ? ' plate--landscape' : ''}`}>
             <img
               src={photo.src}
               alt={photo.alt[locale]}
-              width={photo.wide ? 1600 : 1100}
+              width={photo.width}
+              height={photo.height}
+              loading={index === 0 ? 'eager' : 'lazy'}
+              decoding="async"
               data-handoff={concealFirst && index === 0 ? 'hidden' : undefined}
             />
           </figure>

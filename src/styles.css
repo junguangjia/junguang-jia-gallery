@@ -419,6 +419,15 @@ img { max-width: 100%; }
 .plate--left img,
 .plate--right img { max-width: min(46vw, 760px); }
 
+/* Horizontal photographs keep a generous width regardless of editorial alignment.
+   Intrinsic width/height attributes reserve their uncropped aspect ratio. */
+.plate--landscape img {
+  width: min(74vw, 1180px);
+  max-width: 100%;
+  max-height: none;
+}
+
+
 .end-frame {
   min-height: 88vh;
   display: grid;
@@ -567,6 +576,7 @@ img { max-width: 100%; }
     max-width: 100%;
     max-height: none;
   }
+  .plate--landscape img { width: 100%; }
   .home-stage {
     --cap: clamp(2rem, 9vw, 3.3rem);
     --category-gap: clamp(0.8rem, 4vw, 1.8rem);

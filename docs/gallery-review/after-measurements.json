@@ -1,0 +1,362 @@
+[
+  {
+    "viewport": "mobile",
+    "category": "documentary",
+    "images": [
+      {
+        "src": "/photos/07-documentary-train-cab.jpg",
+        "natural": [
+          6240,
+          4160
+        ],
+        "display": [
+          353,
+          235
+        ],
+        "fit": "contain"
+      }
+    ]
+  },
+  {
+    "viewport": "mobile",
+    "category": "landscape",
+    "images": [
+      {
+        "src": "/photos/01-sunset-acacia.jpg",
+        "natural": [
+          2000,
+          1334
+        ],
+        "display": [
+          353,
+          236
+        ],
+        "fit": "contain"
+      }
+    ]
+  },
+  {
+    "viewport": "mobile",
+    "category": "wildlife",
+    "images": [
+      {
+        "src": "/photos/02-oryx.jpg",
+        "natural": [
+          2000,
+          1334
+        ],
+        "display": [
+          353,
+          236
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/03-lioness.jpg",
+        "natural": [
+          1400,
+          2100
+        ],
+        "display": [
+          353,
+          530
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/04-giraffes.jpg",
+        "natural": [
+          2000,
+          1740
+        ],
+        "display": [
+          353,
+          307
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/05-kingfisher.jpg",
+        "natural": [
+          1400,
+          2100
+        ],
+        "display": [
+          353,
+          530
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/06-gazelle.jpg",
+        "natural": [
+          1400,
+          2100
+        ],
+        "display": [
+          353,
+          530
+        ],
+        "fit": "contain"
+      }
+    ]
+  },
+  {
+    "viewport": "mobile",
+    "category": "film",
+    "images": [
+      {
+        "src": "/photos/08-film-pigeons.jpg",
+        "natural": [
+          3024,
+          2005
+        ],
+        "display": [
+          353,
+          234
+        ],
+        "fit": "contain"
+      }
+    ]
+  },
+  {
+    "viewport": "tablet",
+    "category": "documentary",
+    "images": [
+      {
+        "src": "/photos/07-documentary-train-cab.jpg",
+        "natural": [
+          6240,
+          4160
+        ],
+        "display": [
+          607,
+          405
+        ],
+        "fit": "contain"
+      }
+    ]
+  },
+  {
+    "viewport": "tablet",
+    "category": "landscape",
+    "images": [
+      {
+        "src": "/photos/01-sunset-acacia.jpg",
+        "natural": [
+          2000,
+          1334
+        ],
+        "display": [
+          607,
+          405
+        ],
+        "fit": "contain"
+      }
+    ]
+  },
+  {
+    "viewport": "tablet",
+    "category": "wildlife",
+    "images": [
+      {
+        "src": "/photos/02-oryx.jpg",
+        "natural": [
+          2000,
+          1334
+        ],
+        "display": [
+          607,
+          405
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/03-lioness.jpg",
+        "natural": [
+          1400,
+          2100
+        ],
+        "display": [
+          377,
+          566
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/04-giraffes.jpg",
+        "natural": [
+          2000,
+          1740
+        ],
+        "display": [
+          607,
+          528
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/05-kingfisher.jpg",
+        "natural": [
+          1400,
+          2100
+        ],
+        "display": [
+          377,
+          566
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/06-gazelle.jpg",
+        "natural": [
+          1400,
+          2100
+        ],
+        "display": [
+          377,
+          566
+        ],
+        "fit": "contain"
+      }
+    ]
+  },
+  {
+    "viewport": "tablet",
+    "category": "film",
+    "images": [
+      {
+        "src": "/photos/08-film-pigeons.jpg",
+        "natural": [
+          3024,
+          2005
+        ],
+        "display": [
+          607,
+          402
+        ],
+        "fit": "contain"
+      }
+    ]
+  },
+  {
+    "viewport": "desktop",
+    "category": "documentary",
+    "images": [
+      {
+        "src": "/photos/07-documentary-train-cab.jpg",
+        "natural": [
+          6240,
+          4160
+        ],
+        "display": [
+          1066,
+          710
+        ],
+        "fit": "contain"
+      }
+    ]
+  },
+  {
+    "viewport": "desktop",
+    "category": "landscape",
+    "images": [
+      {
+        "src": "/photos/01-sunset-acacia.jpg",
+        "natural": [
+          2000,
+          1334
+        ],
+        "display": [
+          1066,
+          711
+        ],
+        "fit": "contain"
+      }
+    ]
+  },
+  {
+    "viewport": "desktop",
+    "category": "wildlife",
+    "images": [
+      {
+        "src": "/photos/02-oryx.jpg",
+        "natural": [
+          2000,
+          1334
+        ],
+        "display": [
+          1066,
+          711
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/03-lioness.jpg",
+        "natural": [
+          1400,
+          2100
+        ],
+        "display": [
+          587,
+          880
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/04-giraffes.jpg",
+        "natural": [
+          2000,
+          1740
+        ],
+        "display": [
+          1066,
+          927
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/05-kingfisher.jpg",
+        "natural": [
+          1400,
+          2100
+        ],
+        "display": [
+          587,
+          880
+        ],
+        "fit": "contain"
+      },
+      {
+        "src": "/photos/06-gazelle.jpg",
+        "natural": [
+          1400,
+          2100
+        ],
+        "display": [
+          587,
+          880
+        ],
+        "fit": "contain"
+      }
+    ]
+  },
+  {
+    "viewport": "desktop",
+    "category": "film",
+    "images": [
+      {
+        "src": "/photos/08-film-pigeons.jpg",
+        "natural": [
+          3024,
+          2005
+        ],
+        "display": [
+          1066,
+          707
+        ],
+        "fit": "contain"
+      }
+    ]
+  }
+]
