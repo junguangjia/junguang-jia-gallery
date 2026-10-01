@@ -349,15 +349,7 @@ img { max-width: 100%; }
   padding-top: 0;
 }
 
-.series-empty /* Horizontal photographs keep a generous width regardless of editorial alignment.
-   Intrinsic width/height attributes reserve their uncropped aspect ratio. */
-.plate--landscape img {
-  width: min(74vw, 1180px);
-  max-width: 100%;
-  max-height: none;
-}
-
-.end-frame {
+.series-empty .end-frame {
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -426,6 +418,15 @@ img { max-width: 100%; }
 .plate--right { justify-content: flex-end; padding-right: 11vw; }
 .plate--left img,
 .plate--right img { max-width: min(46vw, 760px); }
+
+/* Horizontal photographs keep a generous width regardless of editorial alignment.
+   Intrinsic width/height attributes reserve their uncropped aspect ratio. */
+.plate--landscape img {
+  width: min(74vw, 1180px);
+  max-width: 100%;
+  max-height: none;
+}
+
 
 .end-frame {
   min-height: 88vh;
