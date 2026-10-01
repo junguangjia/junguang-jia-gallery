@@ -642,16 +642,22 @@ img { max-width: 100%; }
 /* Match the interaction query, including touch tablets and narrow windows. */
 @media (max-width: 760px), (pointer: coarse) {
   .home-stage {
-    --cap: clamp(2rem, min(9vw, 7dvh), 3.3rem);
-    --category-gap: clamp(1.6rem, 5.5dvh, 3.25rem);
+    --cap: clamp(2.25rem, min(10vw, 7.5dvh), 3.6rem);
+    --category-gap: clamp(2rem, 6.5dvh, 3.75rem);
+    --category-step: calc(var(--tile-height) + var(--category-gap));
     --stack-height: calc(4 * var(--tile-height) + 3 * var(--category-gap));
     --safe-center: calc(var(--header-height) + env(safe-area-inset-top) + 1.5rem + var(--stack-height) / 2);
+    --stack-center: max(44dvh, var(--safe-center));
+    --preview-center: max(50dvh, var(--safe-center));
+    --preview-shift: calc(var(--preview-center) - var(--stack-center));
+    /* Retreat farther than either end initial travels, so their paths stay clear. */
+    --retreat-distance: calc(1.75 * var(--category-step) + var(--preview-shift));
     z-index: 3;
     min-height: max(100dvh, calc(var(--safe-center) + var(--stack-height) / 2 + 1.25rem + env(safe-area-inset-bottom)));
   }
 
   .category-hit {
-    top: max(50dvh, var(--safe-center));
+    top: var(--stack-center);
   }
 
   .category-row {
@@ -660,24 +666,26 @@ img { max-width: 100%; }
   }
 
   .category-row li,
-  .category-row li:has(.category-title[data-open="true"]) {
-    transition: opacity 360ms ease-in-out, transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+  .category-row li:has(.category-title[data-open="true"]),
+  .category-row li[data-yield="true"] {
+    /* Matching motion in both directions keeps the same clearance on return. */
+    transition: opacity 360ms ease-in-out, transform 360ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .category-row li:has(.category-title[data-open="true"]) {
     transform: translate3d(
       calc(-0.5 * var(--cap) * var(--word-overhang)),
-      calc((1.5 - var(--category-index)) * (var(--tile-height) + var(--category-gap))),
+      calc((1.5 - var(--category-index)) * var(--category-step) + var(--preview-shift)),
       0
     );
   }
 
   .category-row li[data-yield="true"] {
-    transform: translateY(2rem);
+    transform: translateY(var(--retreat-distance));
   }
 
   .category-row li[data-yield="true"]:has(~ li .category-title[data-open="true"]) {
-    transform: translateY(-2rem);
+    transform: translateY(calc(-1 * var(--retreat-distance)));
   }
 
   .home[data-preview="true"] .home-stage { pointer-events: none; }
