@@ -4,6 +4,92 @@ import { useLocale } from '../locale.tsx'
 
 const MOBILE_QUERY = '(max-width: 760px), (pointer: coarse)'
 const PREVIEW_STATE_KEY = 'galleryHomePreview'
+const SWIPE_HINT_DELAY = 900
+const SWIPE_HINT_DURATION = 2100
+
+function PreviewSwipeHint({ coverId, menuOpen }: { coverId: string; menuOpen: boolean }) {
+  const [visible, setVisible] = useState(false)
+  const dismissRef = useRef(() => {})
+
+  useEffect(() => {
+    const image = document.getElementById(coverId)?.querySelector('img')
+    if (!image) return
+
+    let dismissed = false
+    let scheduled = false
+    let revealTimer: number | undefined
+    let removalTimer: number | undefined
+    const viewport = window.visualViewport
+    const fitsViewport = () => (viewport?.height ?? window.innerHeight) >= 480
+    const clearTimers = () => {
+      window.clearTimeout(revealTimer)
+      window.clearTimeout(removalTimer)
+    }
+    const dismiss = () => {
+      dismissed = true
+      clearTimers()
+      setVisible(false)
+    }
+    dismissRef.current = dismiss
+
+    const onReady = () => {
+      if (dismissed || scheduled || !image.naturalWidth) return
+      scheduled = true
+      // Loading and activation must both be complete before the quiet interval starts.
+      revealTimer = window.setTimeout(() => {
+        if (dismissed || !fitsViewport() || document.visibilityState !== 'visible') return
+        setVisible(true)
+        removalTimer = window.setTimeout(dismiss, SWIPE_HINT_DURATION)
+      }, SWIPE_HINT_DELAY)
+    }
+    const onResize = () => {
+      if (!fitsViewport()) dismiss()
+    }
+    const onVisibility = () => {
+      if (document.visibilityState !== 'visible') dismiss()
+    }
+    const passiveCapture = { capture: true, passive: true }
+    window.addEventListener('pointerdown', dismiss, passiveCapture)
+    window.addEventListener('touchstart', dismiss, passiveCapture)
+    window.addEventListener('click', dismiss, true)
+    window.addEventListener('keydown', dismiss, true)
+    window.addEventListener('popstate', dismiss)
+    window.addEventListener('resize', onResize)
+    viewport?.addEventListener('resize', onResize)
+    document.addEventListener('visibilitychange', onVisibility)
+    image.addEventListener('load', onReady)
+    image.addEventListener('error', dismiss)
+
+    if (!fitsViewport() || document.visibilityState !== 'visible') dismiss()
+    if (image.complete) {
+      if (image.naturalWidth) onReady()
+      else dismiss()
+    }
+
+    return () => {
+      dismissed = true
+      clearTimers()
+      dismissRef.current = () => {}
+      window.removeEventListener('pointerdown', dismiss, true)
+      window.removeEventListener('touchstart', dismiss, true)
+      window.removeEventListener('click', dismiss, true)
+      window.removeEventListener('keydown', dismiss, true)
+      window.removeEventListener('popstate', dismiss)
+      window.removeEventListener('resize', onResize)
+      viewport?.removeEventListener('resize', onResize)
+      document.removeEventListener('visibilitychange', onVisibility)
+      image.removeEventListener('load', onReady)
+      image.removeEventListener('error', dismiss)
+    }
+  }, [coverId])
+
+  useEffect(() => {
+    // Closing the menu must not re-arm a hint already dismissed during this visit.
+    if (menuOpen) dismissRef.current()
+  }, [menuOpen])
+
+  return visible && !menuOpen ? <div className="home-swipe-hint" aria-hidden="true" /> : null
+}
 
 function readPreview() {
   if (window.location.pathname !== '/') return null
@@ -67,9 +153,10 @@ function titleAt(row: HTMLElement, x: number, y: number) {
 
 type Props = {
   onOpen: (category: Category) => void
+  menuOpen: boolean
 }
 
-export function Home({ onOpen }: Props) {
+export function Home({ onOpen, menuOpen }: Props) {
   const { t } = useLocale()
   const [mobile, setMobile] = useState(() => window.matchMedia(MOBILE_QUERY).matches)
   const rowRef = useRef<HTMLUListElement>(null)
@@ -257,6 +344,13 @@ export function Home({ onOpen }: Props) {
             event.preventDefault()
             enterGallery(activeCategory)
           }}
+        />
+      ) : null}
+      {mobile && activeCategory ? (
+        <PreviewSwipeHint
+          key={activeCategory.id}
+          coverId={`home-cover-${activeCategory.id}`}
+          menuOpen={menuOpen}
         />
       ) : null}
       {mobile ? (

@@ -73,7 +73,7 @@ export default function App() {
         onMenu={() => setMenuOpen((open) => !open)}
         onNavigate={() => setMenuOpen(false)}
       />
-      {path === '/' ? <Home onOpen={openCategory} /> : null}
+      {path === '/' ? <Home onOpen={openCategory} menuOpen={menuOpen} /> : null}
       {category ? (
         <Series category={category} concealFirst={handoff?.id === category.id} />
       ) : null}
