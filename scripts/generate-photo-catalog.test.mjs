@@ -8,11 +8,11 @@ import { generatePhotoCatalog } from './generate-photo-catalog.mjs'
 const curation = JSON.parse(await readFile(new URL('../src/photo-curation.json', import.meta.url), 'utf8'))
 const covers = {
   documentary: 'documentary/07-documentary-train-cab.jpg',
-  landscape: 'landscape/01-sunset-acacia.jpg',
+  landscape: 'landscape/DSC00426.jpg',
   wildlife: 'wildlife/02-oryx.jpg',
   film: 'film/08-film-pigeons.jpg',
 }
-const samples = [...Object.values(covers), ...['03-lioness.jpg', '04-giraffes.jpg', '05-kingfisher.jpg', '06-gazelle.jpg'].map((name) => `wildlife/${name}`)]
+const samples = [covers.documentary, 'landscape/01-sunset-acacia.jpg', covers.wildlife, covers.film, ...['03-lioness.jpg', '04-giraffes.jpg', '05-kingfisher.jpg', '06-gazelle.jpg'].map((name) => `wildlife/${name}`)]
 
 // Synthetic frame headers exercise dimension parsing without using private photographs.
 function jpegHeader(width, height) {
@@ -76,7 +76,7 @@ test('a clean checkout displays all eight tracked samples in curated order', asy
 test('each cover begins a coherent first series with explicit continuation', () => {
   const openings = {
     documentary: ['documentary/07-documentary-train-cab.jpg', 'documentary/DSC04898.jpg'],
-    landscape: ['landscape/01-sunset-acacia.jpg', 'landscape/DSC07506.jpg', 'landscape/DSC07465.jpg'],
+    landscape: ['landscape/DSC00426.jpg', 'landscape/DSC00395.jpg'],
     wildlife: ['wildlife/02-oryx.jpg', 'wildlife/DSC03262-2.jpg', 'wildlife/DSC04728.JPG', 'wildlife/DSC03444-2.jpg'],
     film: ['film/08-film-pigeons.jpg', 'film/000046190019.jpg'],
   }

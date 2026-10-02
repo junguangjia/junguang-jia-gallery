@@ -791,6 +791,30 @@
     ],
     "landscape": [
       {
+        "id": "city-after-dark",
+        "title": {
+          "en": "City after Dark",
+          "zh": "城市入夜"
+        },
+        "photos": [
+          "landscape/DSC00426.jpg",
+          "landscape/DSC00395.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "landscape/DSC00395.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC00426.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          }
+        }
+      },
+      {
         "id": "trees-in-warm-light",
         "title": {
           "en": "Trees in Warm Light",
@@ -1244,30 +1268,6 @@
             "align": "right",
             "size": "large",
             "inset": "outer"
-          }
-        }
-      },
-      {
-        "id": "city-after-dark",
-        "title": {
-          "en": "City after Dark",
-          "zh": "城市入夜"
-        },
-        "photos": [
-          "landscape/DSC00395.jpg",
-          "landscape/DSC00426.jpg"
-        ],
-        "align": "left",
-        "layout": {
-          "landscape/DSC00395.jpg": {
-            "align": "left",
-            "size": "large",
-            "inset": "outer"
-          },
-          "landscape/DSC00426.jpg": {
-            "align": "right",
-            "size": "medium",
-            "inset": "middle"
           }
         }
       }

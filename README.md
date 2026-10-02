@@ -3,8 +3,8 @@
 A minimal photography portfolio built with React, TypeScript, and Vite.
 
 The homepage has four handwritten category titles: Documentary, Landscape,
-Wildlife, and Film. Each category keeps its original cover and displays the local
-production photo collection below it.
+Wildlife, and Film. Each category displays its selected cover followed by the
+local production photo collection.
 
 English is the default. The header and mobile menu provide a Chinese language
 switch. Photograph series scroll vertically and display the full images.
@@ -62,8 +62,8 @@ changes do not move files. Its duplicate exclusions hide display entries while
 retaining every source file. Add future photographs to a series in this metadata;
 unassigned files produce an actionable catalog error.
 
-Each existing cover is the first photograph of its opening series. The openings
-continue railway subjects, trees in warm light, grassland oryx, and the same
+Each selected cover is the first photograph of its opening series. The openings
+continue railway subjects, the city after dark, grassland oryx, and the same
 pigeon-feeding scene. Landscape's grouping follows a shared visual subject;
 it does not assert a shared location or event.
 
@@ -76,7 +76,8 @@ The production directories and generated catalog are ignored by Git. A fresh
 checkout uses the eight tracked development samples; production deployment must
 run from a machine with the complete local photo collection. Optional files with
 the same sample basenames in their respective category directories replace the
-displayed samples with higher-resolution versions, preserving the four covers.
+displayed samples with higher-resolution versions. Landscape uses `DSC00426.jpg`
+as its production cover and the sunset sample when that series is unavailable.
 Horizontal photographs retain their full aspect ratio and never exceed the
 fitted cover's width or height. Per-photo `layout` entries set left/right
 placement and scale, giving portrait sequences more variation while preserving
