@@ -52,8 +52,10 @@ is needed.
 ```bash
 npm run cf:preview  # build, then preview Workers at http://127.0.0.1:8787
 npx wrangler login # once, if this machine is not authenticated
-npm run deploy     # build and deploy junguang-jia-gallery
+npm run deploy     # build and deploy photo
 ```
+
+Production URL: https://photo.junguangjia.workers.dev/
 
 Place web-ready JPEGs in `public/photos/documentary`, `landscape`, `wildlife`,
 and `film`. `src/photo-curation.json` defines their display category, named series,
@@ -79,9 +81,9 @@ the same sample basenames in their respective category directories replace the
 displayed samples with higher-resolution versions. Landscape uses `DSC00426.jpg`
 as its production cover and the sunset sample when that series is unavailable.
 Horizontal photographs retain their full aspect ratio and never exceed the
-fitted cover's width or height. Per-photo `layout` entries set left/right
-placement and scale, giving portrait sequences more variation while preserving
-the curated order. Left-aligned photographs share the cover's left edge, and
+fitted cover's width or height. Per-photo `layout` entries set placement
+(left, right, or center) and scale, giving portrait sequences more variation
+while preserving the curated order. Left-aligned photographs share the cover's left edge, and
 right-aligned photographs share its right edge, on desktop and mobile. Mobile
 layouts keep milder horizontal size changes and retain the portrait staggering.
 

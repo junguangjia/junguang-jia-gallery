@@ -50,7 +50,7 @@ export function Series({ category, concealFirst = false }: Props) {
           <h2 id={`series-${series.id}`} className="visually-hidden">{series.title[locale]}</h2>
           {photos.filter((photo) => photo.seriesId === series.id).map((photo) => {
             const first = photo === photos[0]
-            const align = first ? 'center' : photo.placement === 'right' ? 'right' : 'left'
+            const align = first ? 'center' : photo.placement ?? 'left'
             const horizontal = (photo.width ?? 0) > (photo.height ?? 0)
             const plateStyle = first ? undefined : {
               '--photo-ratio': (photo.width ?? 1100) / (photo.height ?? 1650),
