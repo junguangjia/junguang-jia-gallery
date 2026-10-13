@@ -40,7 +40,7 @@ async function fixture(t, metadata = curation) {
 test('curation retains the approved covers, duplicates and category migrations', () => {
   const assigned = Object.fromEntries(Object.entries(curation.categories).map(([id, series]) => [id, series.flatMap((item) => item.photos)]))
   assert.deepEqual(Object.fromEntries(Object.entries(assigned).map(([id, paths]) => [id, paths.length])), {
-    documentary: 96, landscape: 45, wildlife: 74, film: 43,
+    documentary: 84, landscape: 57, wildlife: 74, film: 43,
   })
   const all = Object.values(assigned).flat()
   assert.equal(new Set(all).size, 258)
@@ -51,7 +51,7 @@ test('curation retains the approved covers, duplicates and category migrations',
     assert(all.includes(duplicateOf))
   }
   for (const filename of ['DSC00326.jpg', 'DSC08137-2.jpg', 'DSC08215-2.jpg', 'DSC09228.jpg', 'DSC09736.JPG', 'DSC09740.JPG']) {
-    assert(assigned.documentary.includes(`landscape/${filename}`))
+    assert(assigned.landscape.includes(`landscape/${filename}`))
   }
   assert(assigned.wildlife.includes('landscape/DSC05373.jpg'))
 })
@@ -76,7 +76,7 @@ test('a clean checkout displays all eight tracked samples in curated order', asy
 test('each cover begins a coherent first series with explicit continuation', () => {
   const openings = {
     documentary: ['documentary/07-documentary-train-cab.jpg', 'documentary/DSC04898.jpg'],
-    landscape: ['landscape/DSC00426.jpg', 'landscape/DSC00395.jpg'],
+    landscape: ['landscape/DSC00426.jpg', 'landscape/DSC00395.jpg', 'landscape/DSC08137-2.jpg', 'landscape/DSC08215-2.jpg'],
     wildlife: ['wildlife/02-oryx.jpg', 'wildlife/DSC03262-2.jpg', 'wildlife/DSC04728.JPG', 'wildlife/DSC03444-2.jpg'],
     film: ['film/08-film-pigeons.jpg', 'film/000046190019.jpg'],
   }
@@ -96,9 +96,9 @@ test('production copies and migrated photos retain source paths and full dimensi
   assert.equal(train.src, '/photos/documentary/07-documentary-train-cab.jpg')
   assert.equal(train.width, 4500)
   assert.equal(catalog.documentary.filter((photo) => photo.id === 'train-cab').length, 1)
-  const motorcycle = catalog.documentary.find((photo) => photo.id === 'landscape-DSC00326.jpg')
+  const motorcycle = catalog.landscape.find((photo) => photo.id === 'landscape-DSC00326.jpg')
   assert.equal(motorcycle.src, '/photos/landscape/DSC00326.jpg')
-  assert.equal(motorcycle.seriesId, 'roadside-markets')
+  assert.equal(motorcycle.seriesId, 'painted-shopfront')
   assert.equal(motorcycle.wide, false)
   const oryx = catalog.wildlife.find((photo) => photo.id === 'landscape-DSC05373.jpg')
   assert.equal(oryx.width, 6000)

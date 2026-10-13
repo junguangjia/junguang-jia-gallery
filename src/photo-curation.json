@@ -351,76 +351,16 @@
         }
       },
       {
-        "id": "carved-devotion",
+        "id": "market-street",
         "title": {
-          "en": "Carved Devotion",
-          "zh": "石刻与信仰"
+          "en": "Market Street",
+          "zh": "街头市集"
         },
         "photos": [
-          "landscape/DSC09736.JPG",
-          "landscape/DSC09740.JPG",
-          "documentary/DSC09240.jpg",
-          "documentary/DSC09250.jpg",
-          "documentary/DSC09268.jpg"
-        ],
-        "align": "right",
-        "layout": {
-          "landscape/DSC09736.JPG": {
-            "align": "left",
-            "size": "large",
-            "inset": "outer"
-          },
-          "landscape/DSC09740.JPG": {
-            "align": "right",
-            "size": "small",
-            "inset": "inner"
-          },
-          "documentary/DSC09240.jpg": {
-            "align": "left",
-            "size": "medium",
-            "inset": "inner"
-          },
-          "documentary/DSC09250.jpg": {
-            "align": "left",
-            "size": "large",
-            "inset": "middle"
-          },
-          "documentary/DSC09268.jpg": {
-            "align": "right",
-            "size": "medium",
-            "inset": "outer"
-          }
-        }
-      },
-      {
-        "id": "hong-kong-after-dark",
-        "title": {
-          "en": "Hong Kong after Dark",
-          "zh": "香港入夜"
-        },
-        "photos": [
-          "documentary/DSC00593.jpg",
-          "documentary/DSC00603.jpg",
-          "documentary/DSC00614.jpg",
           "documentary/DSC00621.jpg"
         ],
         "align": "left",
         "layout": {
-          "documentary/DSC00593.jpg": {
-            "align": "left",
-            "size": "medium",
-            "inset": "inner"
-          },
-          "documentary/DSC00603.jpg": {
-            "align": "left",
-            "size": "large",
-            "inset": "outer"
-          },
-          "documentary/DSC00614.jpg": {
-            "align": "right",
-            "size": "medium",
-            "inset": "middle"
-          },
           "documentary/DSC00621.jpg": {
             "align": "right",
             "size": "small",
@@ -497,30 +437,6 @@
             "align": "right",
             "size": "medium",
             "inset": "inner"
-          }
-        }
-      },
-      {
-        "id": "times-square-in-the-rain",
-        "title": {
-          "en": "Times Square in the Rain",
-          "zh": "雨中的时代广场"
-        },
-        "photos": [
-          "landscape/DSC08137-2.jpg",
-          "landscape/DSC08215-2.jpg"
-        ],
-        "align": "right",
-        "layout": {
-          "landscape/DSC08137-2.jpg": {
-            "align": "right",
-            "size": "large",
-            "inset": "outer"
-          },
-          "landscape/DSC08215-2.jpg": {
-            "align": "right",
-            "size": "medium",
-            "inset": "middle"
           }
         }
       },
@@ -670,7 +586,6 @@
         },
         "photos": [
           "documentary/L1009226.jpg",
-          "landscape/DSC00326.jpg",
           "documentary/IMG_2141.JPG",
           "documentary/DSC03423.jpg",
           "documentary/DSC07190.jpg",
@@ -682,11 +597,6 @@
             "align": "left",
             "size": "large",
             "inset": "middle"
-          },
-          "landscape/DSC00326.jpg": {
-            "align": "right",
-            "size": "medium",
-            "inset": "outer"
           },
           "documentary/IMG_2141.JPG": {
             "align": "right",
@@ -769,24 +679,6 @@
             "inset": "middle"
           }
         }
-      },
-      {
-        "id": "desert-drive",
-        "title": {
-          "en": "Desert Drive",
-          "zh": "驶过荒野"
-        },
-        "photos": [
-          "landscape/DSC09228.jpg"
-        ],
-        "align": "right",
-        "layout": {
-          "landscape/DSC09228.jpg": {
-            "align": "right",
-            "size": "small",
-            "inset": "inner"
-          }
-        }
       }
     ],
     "landscape": [
@@ -798,7 +690,9 @@
         },
         "photos": [
           "landscape/DSC00426.jpg",
-          "landscape/DSC00395.jpg"
+          "landscape/DSC00395.jpg",
+          "landscape/DSC08137-2.jpg",
+          "landscape/DSC08215-2.jpg"
         ],
         "align": "left",
         "layout": {
@@ -808,6 +702,46 @@
             "inset": "outer"
           },
           "landscape/DSC00426.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          },
+          "landscape/DSC08137-2.jpg": {
+            "align": "right",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC08215-2.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "hong-kong-after-dark",
+        "title": {
+          "en": "Hong Kong after Dark",
+          "zh": "香港入夜"
+        },
+        "photos": [
+          "documentary/DSC00593.jpg",
+          "documentary/DSC00603.jpg",
+          "documentary/DSC00614.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "documentary/DSC00593.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/DSC00603.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/DSC00614.jpg": {
             "align": "right",
             "size": "medium",
             "inset": "middle"
@@ -966,7 +900,8 @@
           "zh": "花岗岩山谷"
         },
         "photos": [
-          "landscape/DSC09217-2.jpg"
+          "landscape/DSC09217-2.jpg",
+          "landscape/DSC09228.jpg"
         ],
         "align": "right",
         "layout": {
@@ -974,6 +909,11 @@
             "align": "right",
             "size": "medium",
             "inset": "outer"
+          },
+          "landscape/DSC09228.jpg": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
           }
         }
       },
@@ -1176,6 +1116,24 @@
         }
       },
       {
+        "id": "painted-shopfront",
+        "title": {
+          "en": "Painted Shopfront",
+          "zh": "彩漆店面"
+        },
+        "photos": [
+          "landscape/DSC00326.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC00326.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
+          }
+        }
+      },
+      {
         "id": "palace-courtyards",
         "title": {
           "en": "Palace Courtyards",
@@ -1213,6 +1171,48 @@
           "landscape/DSC00984.jpg": {
             "align": "left",
             "size": "large",
+            "inset": "outer"
+          }
+        }
+      },
+      {
+        "id": "stone-grottoes",
+        "title": {
+          "en": "Stone Grottoes",
+          "zh": "石窟"
+        },
+        "photos": [
+          "landscape/DSC09736.JPG",
+          "landscape/DSC09740.JPG",
+          "documentary/DSC09240.jpg",
+          "documentary/DSC09250.jpg",
+          "documentary/DSC09268.jpg"
+        ],
+        "align": "right",
+        "layout": {
+          "landscape/DSC09736.JPG": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "landscape/DSC09740.JPG": {
+            "align": "right",
+            "size": "small",
+            "inset": "inner"
+          },
+          "documentary/DSC09240.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/DSC09250.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "documentary/DSC09268.jpg": {
+            "align": "right",
+            "size": "medium",
             "inset": "outer"
           }
         }
