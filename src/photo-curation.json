@@ -351,64 +351,16 @@
         }
       },
       {
-        "id": "carved-devotion",
+        "id": "market-street",
         "title": {
-          "en": "Carved Devotion",
-          "zh": "石刻与信仰"
+          "en": "Market Street",
+          "zh": "街头市集"
         },
         "photos": [
-          "documentary/DSC09240.jpg",
-          "documentary/DSC09250.jpg",
-          "documentary/DSC09268.jpg"
-        ],
-        "align": "right",
-        "layout": {
-          "documentary/DSC09240.jpg": {
-            "align": "left",
-            "size": "medium",
-            "inset": "inner"
-          },
-          "documentary/DSC09250.jpg": {
-            "align": "left",
-            "size": "large",
-            "inset": "middle"
-          },
-          "documentary/DSC09268.jpg": {
-            "align": "right",
-            "size": "medium",
-            "inset": "outer"
-          }
-        }
-      },
-      {
-        "id": "hong-kong-after-dark",
-        "title": {
-          "en": "Hong Kong after Dark",
-          "zh": "香港入夜"
-        },
-        "photos": [
-          "documentary/DSC00593.jpg",
-          "documentary/DSC00603.jpg",
-          "documentary/DSC00614.jpg",
           "documentary/DSC00621.jpg"
         ],
         "align": "left",
         "layout": {
-          "documentary/DSC00593.jpg": {
-            "align": "left",
-            "size": "medium",
-            "inset": "inner"
-          },
-          "documentary/DSC00603.jpg": {
-            "align": "left",
-            "size": "large",
-            "inset": "outer"
-          },
-          "documentary/DSC00614.jpg": {
-            "align": "right",
-            "size": "medium",
-            "inset": "middle"
-          },
           "documentary/DSC00621.jpg": {
             "align": "right",
             "size": "small",
@@ -760,6 +712,36 @@
             "inset": "outer"
           },
           "landscape/DSC08215-2.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "middle"
+          }
+        }
+      },
+      {
+        "id": "hong-kong-after-dark",
+        "title": {
+          "en": "Hong Kong after Dark",
+          "zh": "香港入夜"
+        },
+        "photos": [
+          "documentary/DSC00593.jpg",
+          "documentary/DSC00603.jpg",
+          "documentary/DSC00614.jpg"
+        ],
+        "align": "left",
+        "layout": {
+          "documentary/DSC00593.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/DSC00603.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "outer"
+          },
+          "documentary/DSC00614.jpg": {
             "align": "right",
             "size": "medium",
             "inset": "middle"
@@ -1201,7 +1183,10 @@
         },
         "photos": [
           "landscape/DSC09736.JPG",
-          "landscape/DSC09740.JPG"
+          "landscape/DSC09740.JPG",
+          "documentary/DSC09240.jpg",
+          "documentary/DSC09250.jpg",
+          "documentary/DSC09268.jpg"
         ],
         "align": "right",
         "layout": {
@@ -1214,6 +1199,21 @@
             "align": "right",
             "size": "small",
             "inset": "inner"
+          },
+          "documentary/DSC09240.jpg": {
+            "align": "left",
+            "size": "medium",
+            "inset": "inner"
+          },
+          "documentary/DSC09250.jpg": {
+            "align": "left",
+            "size": "large",
+            "inset": "middle"
+          },
+          "documentary/DSC09268.jpg": {
+            "align": "right",
+            "size": "medium",
+            "inset": "outer"
           }
         }
       },

@@ -40,7 +40,7 @@ async function fixture(t, metadata = curation) {
 test('curation retains the approved covers, duplicates and category migrations', () => {
   const assigned = Object.fromEntries(Object.entries(curation.categories).map(([id, series]) => [id, series.flatMap((item) => item.photos)]))
   assert.deepEqual(Object.fromEntries(Object.entries(assigned).map(([id, paths]) => [id, paths.length])), {
-    documentary: 90, landscape: 51, wildlife: 74, film: 43,
+    documentary: 84, landscape: 57, wildlife: 74, film: 43,
   })
   const all = Object.values(assigned).flat()
   assert.equal(new Set(all).size, 258)
