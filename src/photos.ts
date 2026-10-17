@@ -1,4 +1,5 @@
 import { coverOverrides, photoCatalog, seriesCatalog } from './photo-catalog.generated.ts'
+import { siteUrl } from './paths.ts'
 
 export type Photo = {
   id: string
@@ -108,6 +109,7 @@ const fixturePhotos: readonly Photo[] = [
 export const photos: readonly Photo[] = fixturePhotos.map((photo) => ({
   ...photo,
   ...coverOverrides[photo.id],
+  src: siteUrl(coverOverrides[photo.id]?.src ?? photo.src),
 }))
 
 export type Category = {
@@ -136,6 +138,7 @@ export type Category = {
 const photoById = Object.fromEntries(photos.map((photo) => [photo.id, photo])) as Record<string, Photo>
 const curatedPhotos = (catalog: readonly Photo[]) => catalog.map((photo) => ({
   ...photo,
+  src: siteUrl(photo.src),
   ...(photoById[photo.id] ? { alt: photoById[photo.id].alt, focal: photoById[photo.id].focal } : {}),
 }))
 

@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { copy, type Locale } from './copy.ts'
-
-const STORAGE_KEY = 'jj-locale'
+import { createDefaultLocaleController } from './default-locale.ts'
 
 type LocaleValue = {
   locale: Locale
@@ -11,33 +10,26 @@ type LocaleValue = {
 
 const LocaleContext = createContext<LocaleValue | null>(null)
 
-function readLocale(): Locale {
-  try {
-    return window.localStorage.getItem(STORAGE_KEY) === 'zh' ? 'zh' : 'en'
-  } catch {
-    return 'en'
-  }
-}
-
 export function LocaleProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>(readLocale)
+  const [controller] = useState(() => createDefaultLocaleController())
+  const [locale, setLocale] = useState<Locale>(() => controller.getLocale())
+
+  useEffect(() => {
+    const activation = controller.start(setLocale)
+    return activation.cancel
+  }, [controller])
 
   useEffect(() => {
     document.documentElement.lang = locale === 'zh' ? 'zh-Hans' : 'en'
-    try {
-      window.localStorage.setItem(STORAGE_KEY, locale)
-    } catch {
-      /* private mode */
-    }
   }, [locale])
 
   const value = useMemo<LocaleValue>(
     () => ({
       locale,
-      toggleLocale: () => setLocale((current) => (current === 'en' ? 'zh' : 'en')),
+      toggleLocale: () => controller.choose(controller.getLocale() === 'en' ? 'zh' : 'en'),
       t: copy[locale],
     }),
-    [locale],
+    [locale, controller],
   )
 
   return <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>

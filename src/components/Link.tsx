@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { navigate } from '../router.ts'
+import { siteUrl } from '../paths.ts'
 
 type Props = {
   href: string
@@ -12,7 +13,7 @@ type Props = {
 export function Link({ href, className, children, current = false, onClick }: Props) {
   return (
     <a
-      href={href}
+      href={siteUrl(href)}
       className={className}
       aria-current={current ? 'page' : undefined}
       onClick={(event) => {

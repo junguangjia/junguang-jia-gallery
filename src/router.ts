@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
+import { sitePath, siteUrl } from './paths.ts'
 
 export function navigate(href: string) {
-  const url = new URL(href, window.location.origin)
+  const url = new URL(siteUrl(href), window.location.origin)
   const next = `${url.pathname}${url.search}${url.hash}`
   const current = `${window.location.pathname}${window.location.search}${window.location.hash}`
   if (next !== current) {
@@ -11,10 +12,10 @@ export function navigate(href: string) {
 }
 
 export function usePathname() {
-  const [path, setPath] = useState(() => window.location.pathname)
+  const [path, setPath] = useState(() => sitePath(window.location.pathname))
 
   useEffect(() => {
-    const sync = () => setPath(window.location.pathname)
+    const sync = () => setPath(sitePath(window.location.pathname))
     window.addEventListener('popstate', sync)
     return () => window.removeEventListener('popstate', sync)
   }, [])

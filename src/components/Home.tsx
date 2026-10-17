@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type FocusEvent, type TouchEvent } from 'react'
 import { categories, type Category } from '../photos.ts'
 import { useLocale } from '../locale.tsx'
+import { sitePath, siteUrl } from '../paths.ts'
 
 const MOBILE_QUERY = '(max-width: 760px), (pointer: coarse)'
 const PREVIEW_STATE_KEY = 'galleryHomePreview'
@@ -67,7 +68,7 @@ function PreviewSwipeHint({ coverId, menuOpen }: { coverId: string; menuOpen: bo
 }
 
 function readPreview() {
-  if (window.location.pathname !== '/') return null
+  if (sitePath(window.location.pathname) !== '/') return null
   const id: unknown = window.history.state?.[PREVIEW_STATE_KEY]
   return categories.some((category) => category.id === id) ? id as string : null
 }
@@ -177,7 +178,7 @@ export function Home({ onOpen, menuOpen }: Props) {
       enteringGallery.current = false
       gestureRef.current = null
       suppressClickUntil.current = 0
-      if (!next && selected && window.location.pathname === '/') {
+      if (!next && selected && sitePath(window.location.pathname) === '/') {
         if (keyboardInput.current) {
           rowRef.current?.querySelector<HTMLAnchorElement>(`[data-category="${selected}"]`)?.focus({ preventScroll: true })
         } else {
@@ -312,7 +313,7 @@ export function Home({ onOpen, menuOpen }: Props) {
       {mobile && activeCategory ? (
         <a
           className="home-enter"
-          href={activeCategory.path}
+          href={siteUrl(activeCategory.path)}
           aria-label={t.openGallery(activeCategory.word)}
           onClick={(event) => {
             if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return
@@ -378,7 +379,7 @@ export function Home({ onOpen, menuOpen }: Props) {
                   inert={mobile && Boolean(active) && !open}
                 >
                   <a
-                    href={category.path}
+                    href={siteUrl(category.path)}
                     className="category-title"
                     data-category={category.id}
                     data-open={open ? 'true' : 'false'}
@@ -431,14 +432,14 @@ export function Home({ onOpen, menuOpen }: Props) {
                     >
                       <img
                         className="category-letter"
-                        src={`/titles/${category.id}-letter.png`}
+                        src={siteUrl(`/titles/${category.id}-letter.png`)}
                         alt=""
                         width={category.letterW}
                         height={category.canvasH}
                       />
                       <img
                         className="category-rest"
-                        src={`/titles/${category.id}-rest.png`}
+                        src={siteUrl(`/titles/${category.id}-rest.png`)}
                         alt=""
                         width={category.restW}
                         height={category.canvasH}

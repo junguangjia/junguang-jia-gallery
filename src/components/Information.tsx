@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useLocale } from '../locale.tsx'
+import { siteUrl } from '../paths.ts'
 
 export function Information() {
   const { t } = useLocale()
@@ -18,7 +19,7 @@ export function Information() {
       <p>{t.infoBody}</p>
       <p>{t.infoPurpose}</p>
       <div className="info-signature" aria-hidden="true">
-        <img src="/signature.png" alt="" width="813" height="204" />
+        <img src={siteUrl('/signature.png')} alt="" width="813" height="204" />
       </div>
     </main>
   )
